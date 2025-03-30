@@ -54,6 +54,7 @@ TELNET (Teletype Network) protocol is a network protocol for remote terminal con
 
 v----------NETWORKING ESSENTIALS--------------v
 
+*-DHCP-*
 DNS - domain name system
 DHCP - The Dynamic Host Configuration Protocol(protokolas automatiškai paskirstantis lokalius ip adresus, laptopai
 ir telefonai turi juos is karto(by default))
@@ -63,10 +64,47 @@ DHCP turi 4 žingsnius - "DOGE" (yra fotke)
 2. DHCP Offer: serveris atsako su "DHCPOFFER" žinute su ip adresu, kuris yra laisvas klientui priimti.
 3. DHCP Request: klientas atsako su "DHCPREQUEST" žinute, kad nurodytų, kad priemė pasiūlytą ip.
 4. DHCP Acknowledge: serveris atsako su "DHCPACK" žinute patvirtinant, kad klientui yra priskirtas pasiūlyas ip adresas.
+*-DHCP-*
 
-
+*-ARP-*
 ARP - Address Resolution Protocol(atsakingas uz MAC adresų ieškojamą - ieško transliuodamas "who has this IP address", 
 kuriam atsako "{ieškomas IP} is at {ieškomo ip MAC adresas}")
 ARP priklauso 2-am sluoksniui(Data Link), nes "užsiima" su MAC adresais
+*-ARP-*
 
-ICMP - Internet Control Message Protocol(
+
+*-ICMP-*
+ICMP - Internet Control Message Protocol(pagrinde naudojamas tinklo diagnostikom ir klaidu raportavimui, pagrindines komando: "ping" ir "traceroute")
+
+ping: naudojama patikrinti ryšiui(ar jis yra), paskaičiuoti RTT(round-trip time) siunciant echo request'a (ICMP Type 8), 
+requesto gavejas atsako su Echo Reply(ICMP Type 0)
+
+traceroute("tracert" windows'uose): naudojamas atrasti kelia nuo hosto iki taikini(target'o) - parodo visus(jei išeina, nes dauguma 
+gali ir nepasirodyti) routerius, kurie yra tarp hosto ir targeto atskleidziant ju ip adresus. kartojant ta pacia komanda rezutatas gali keistis.
+TTL - time to live
+
+abi komandos naudoja ICMP padaryti, tai ka daro.
+*-ICMP-*
+
+
+*-ROUTING-*
+keli pagrindinių routing'o protokolų pvz:
+1. OSPF (Open Shortest Path First) - greičiausias būdas - routeriai dalinasi info tarpusavy apie jū topologiją(fizinį išdėstymą), taip 
+kiekvienas routeris žino visą tinklo žemėlapį ir gali nustatyti greičiausią maršrutą(route'ą).
+2. EIGRP (Enhanced Interior Gateway Routing Protocol) - leidžia dalintis routereiams info, tada jie su algoritmais 
+paskaičiuoja efektyviausią/labiausiai apsimokantį būdą perduoti duomenis.
+3. BGP (Border Gateway Protocol) - pagrinde naudojamas internetui(ne lokaliam tinklui), jis leidžia skirtingiems tinklams dalintis rout'ingo info 
+ir įsteigti(establish'int) kelius duomenims keliauti. BGP gali padėti maršrutizuoti(routinti) duomenims per internetą, net per daug skirtingų tinklų.
+4. RIP (Routing Information Protocol) - paprastas protokolas, dažniausiai naudojamas mažiems tinklams. routeriai dalinasi info apie tinklus, 
+kuriuos gali pasiekti ir apie routerius(hops), kurių jiems reikia, kad iki ten nusigautų. Rezultate, kiekvienas routeris susidaro routing table ir 
+renkasi kelią, kuriam reikia mažiausiai hops'ų(routerių).
+*-ROUTING-*
+
+
+*-NAT-*
+
+NAT - Network Address Translation (kaip supratau tiesiog išskirsto internal ir external ip adresus router'yje)
+
+*-NAT-*
+
+^----------NETWORKING ESSENTIALS--------------^
