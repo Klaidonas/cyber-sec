@@ -1,0 +1,9 @@
+Shodan: https://www.shodan.io/
+Search engine for devices connected to the Internet(pvz kiek yra pajungtu apache 2.4.1 servu - search: apache 2.4.1);
+
+Censys: https://search.censys.io/
+pns kaip Shodan, bet shodan fokusuojas labiau ant:Internet-connected devices and systems, such as servers, routers, webcams, and IoT devices,
+o Censys: Internet-connected hosts, websites, certificates, and other Internet assets.
+
+virustotal: https://www.virustotal.com/gui/
+virusu skanavimo irankis (urls, links)

@@ -1,0 +1,5 @@
+regular:
+dirb http://10.10.75.210 /usr/share/wordlists/dirb/common.txt
+
+advanced:
+gobuster dir -u http://10.10.75.210 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html

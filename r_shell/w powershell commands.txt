@@ -1,0 +1,2 @@
+Current User Activity:
+Get-Process | Where-Object { $_.MainWindowTitle } | Select-Object Name, MainWindowTitle

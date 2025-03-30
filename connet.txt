@@ -1,0 +1,10 @@
+ssh:
+from linux to linux: 
+ssh {username arba tsg tryhackme}@{IP}
+psw> password
+
+kaip pazet ar yra ssh:
+
+nmap <target's ip>
+->
+*jei ismeta kazkuri service su portu "22" - yra galimas prisijungimas su ssh, jei ne - ne

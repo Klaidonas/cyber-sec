@@ -1,0 +1,55 @@
+TCP - Transmission Control Protocol
+IP - interet protocol
+
+v----------NETWORKING CONCEPTS--------------v
+
+OSI (Open Systems Interconnection) 7 layers:
+1. Physical Layer: cables, wires, wifi radio bands
+2. Data Link Layer: ethernet, wifi with their mac addresses
+3. Network Layer: IP, ICMP, VPNs(IPSec, SSL/TLS)
+4. Transport Layer: TCP, UDP (Layer 4, the transport layer, enables end-to-end 
+communication between running applications on different hosts. Your web browser 
+is connected to the TryHackMe web server over the transport layer)
+5. Session Layer: NFS, RPC(The session layer is responsible for establishing, maintaining, 
+and synchronising communication between applications running on different hosts)
+6. Presentation Layer: (handles encoding - An example of encoding is character encoding, such as ASCII or Unicode)
+7. Application Layer:  HTTP, FTP, DNS, POP3, SMTP, and IMAP (end user applications, example - browser)
+
+**duomenims keliaujant tinkle "dingsta"(nera naudojami/minimi) "session" ir "presentation" sluoksniai - lieka:
+Physical, Data Link, Network, Transport, Application sluoksniai**
+
+**Routing principas:
+routeris pskirsto kur turi eiti data packet'ai(i kuri network'a) - dazniausiai jie praeina ne iena jų kol pasiekia destinaciją.**
+
+**data packet - mazas vienetas nešantis duomenis tinkle;**
+**socket - data packet'u galutiniai taskai - is kur ir i kur jie siunciamil.**
+
+
+TCP ir UDP - protokolai, leidziantys tinkle perduoti duomenis - abu priklauso OSI 4'tam sluoksniui.
+
+UDP (User Datagram Protocol) - leidzia tai padaryti greiciau/"pigiau", 
+bet uz tai nera patikrinimo, kad  packetai sekmingai pasieke destinacija.
+Pvz kur naudojama: vaizdo skambuciai, geiminimas, live streamai, dns lookups.
+
+TCP (Transmission Control Protocol) - orientuotas rysio budu perdavimo/transporto protokolas. naudoja 
+ivairias mechanikas, kad uztikrinu perdavimo stabiluma. Kadangi yra orentuotas i ryšį, jis reikalauja, kad
+būtų isteigtas/itvirtintas(established) ryšys prieš perduodant bet kokius duomenis.
+TCP ryšys yra įsteigiamas naudojant "three-way handshake", kuriuo metu dvi veliavos(flags) yra naudojamos: "SYN" ir "ACK",
+kai ryšys įsitvirtina, "SYN" flag'ų nebeatsiranda.
+Pvz kur naudojama: Webuose, emailuose(smtp, imap), file transfers(ftp, dropbox).
+
+**Apibendrintai: UDP - pigesnė TCP versija(UDP:fast beats perfect, TCP: must arrive perfectly).**
+
+Encapsulation - kai keliaujantiems duomenims pereinant per kiekvieną sluoksnį(OSI layer) yra pridedamas 
+header'is(arba kartais trailer'is(dazniausiai data link(2) sluoksnyjed))
+
+simplified example of the life of a packet: 
+**SSL vs TLS: TLS yra naujesne, saugesne SSL versija - užšifruojant web traffic'a (ssl jau yra mires galima sakyt)**
+
+Telnet - realiai tiesiog pasenusi ir nesaugi SSH versija(beveik kaip kaip SSL-TLS, rsg kad telnet dar didesnes saugumo spragas turejo).
+TELNET (Teletype Network) protocol is a network protocol for remote terminal connection(tai yra ir protokolas, ir client'as)
+
+^----------NETWORKING CONCEPTS--------------^
+
+
+v----------NETWORKING ESSENTIALS--------------v
