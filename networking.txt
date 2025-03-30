@@ -25,9 +25,9 @@ routeris pskirsto kur turi eiti data packet'ai(i kuri network'a) - dazniausiai j
 **socket - data packet'u galutiniai taskai - is kur ir i kur jie siunciamil.**
 
 
-TCP ir UDP - protokolai, leidziantys tinkle perduoti duomenis - abu priklauso OSI 4'tam sluoksniui.
+TCP ir UDP - protokolai, leidziantys tinkle perduoti duomenis - abu priklauso OSI 4'tam sluoksniui(Transport).
 
-UDP (User Datagram Protocol) - leidzia tai padaryti greiciau/"pigiau", 
+UDP (User Datagram Protocol) - leidzia tai padaryti greiciau/"pigiau"(jam nrk įtvirtinto rysio), 
 bet uz tai nera patikrinimo, kad  packetai sekmingai pasieke destinacija.
 Pvz kur naudojama: vaizdo skambuciai, geiminimas, live streamai, dns lookups.
 
@@ -41,7 +41,7 @@ Pvz kur naudojama: Webuose, emailuose(smtp, imap), file transfers(ftp, dropbox).
 **Apibendrintai: UDP - pigesnė TCP versija(UDP:fast beats perfect, TCP: must arrive perfectly).**
 
 Encapsulation - kai keliaujantiems duomenims pereinant per kiekvieną sluoksnį(OSI layer) yra pridedamas 
-header'is(arba kartais trailer'is(dazniausiai data link(2) sluoksnyjed))
+header'is(arba kartais trailer'is(tokiu atveju dazniausiai data link(2-am) sluoksnyje))
 
 simplified example of the life of a packet: 
 **SSL vs TLS: TLS yra naujesne, saugesne SSL versija - užšifruojant web traffic'a (ssl jau yra mires galima sakyt)**
@@ -53,3 +53,20 @@ TELNET (Teletype Network) protocol is a network protocol for remote terminal con
 
 
 v----------NETWORKING ESSENTIALS--------------v
+
+DNS - domain name system
+DHCP - The Dynamic Host Configuration Protocol(protokolas automatiškai paskirstantis lokalius ip adresus, laptopai
+ir telefonai turi juos is karto(by default))
+
+DHCP turi 4 žingsnius - "DOGE" (yra fotke)
+1. DHCP Discove: klientas transliuoja "DHCPDISCOVER" žinutę ieškodamas DHCP serverio.
+2. DHCP Offer: serveris atsako su "DHCPOFFER" žinute su ip adresu, kuris yra laisvas klientui priimti.
+3. DHCP Request: klientas atsako su "DHCPREQUEST" žinute, kad nurodytų, kad priemė pasiūlytą ip.
+4. DHCP Acknowledge: serveris atsako su "DHCPACK" žinute patvirtinant, kad klientui yra priskirtas pasiūlyas ip adresas.
+
+
+ARP - Address Resolution Protocol(atsakingas uz MAC adresų ieškojamą - ieško transliuodamas "who has this IP address", 
+kuriam atsako "{ieškomas IP} is at {ieškomo ip MAC adresas}")
+ARP priklauso 2-am sluoksniui(Data Link), nes "užsiima" su MAC adresais
+
+ICMP - Internet Control Message Protocol(
