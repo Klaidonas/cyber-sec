@@ -108,3 +108,24 @@ NAT - Network Address Translation (kaip supratau tiesiog išskirsto internal ir 
 *-NAT-*
 
 ^----------NETWORKING ESSENTIALS--------------^
+
+
+V----------NETWORKING CORE PROTOCOLS--------------V
+
+
+HTTP - Hypertext Transfer
+FTP - File Transfer Protocol 
+SMTP - Simple Mail Transfer Protocol
+POP3 - Post Office Protocol Version 3 
+IMAP - The Internet Message Access Protocol 
+
+*-DNS: Remembering ADdresses-*
+A Record - Address record
+AAAA Record - kai address record, bet naudojamas IPV6
+AAA Record - Authentication, Authorization, and Accounting
+CNAME Record - The CNAME (Canonical Name) 
+MX Record - The MX (Mail Exchange) record
+
+
+^----------NETWORKING CORE PROTOCOLS--------------^
+
