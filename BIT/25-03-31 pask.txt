@@ -1,0 +1,9 @@
+risk analysis:
+
+Riziki skaiciavimas, ju ivertinimas, sprendimu budas, skaiciavimas - kuris sprendimas yra geriausias/pigiausias/evektyviausias.
+Gali but ivairiu riziku: isilauzimu i sitea; isilauzimu i fizine imones vieta; phishingu atakos; netycines 
+katastrofos del aplinkybiu(pvz uzpilama/"paskandinama" everine).
+
+Atsako planavimas(Planning responses) - pasiruošimas blogiems atvejams.
+
+oppurtunity:

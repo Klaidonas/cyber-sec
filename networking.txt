@@ -46,58 +46,59 @@ header'is(arba kartais trailer'is(tokiu atveju dazniausiai data link(2-am) sluok
 simplified example of the life of a packet: 
 **SSL vs TLS: TLS yra naujesne, saugesne SSL versija - užšifruojant web traffic'a (ssl jau yra mires galima sakyt)**
 
-Telnet - realiai tiesiog pasenusi ir nesaugi SSH versija(beveik kaip kaip SSL-TLS, rsg kad telnet dar didesnes saugumo spragas turejo).
+Telnet - panasiai kaip SSH, tik kad jungiamasi ne prie hosto(ar bbz kaip vadinas - tsg kompo(port: 22), o prie web servo ir yra nesaugesnis.
 TELNET (Teletype Network) protocol is a network protocol for remote terminal connection(tai yra ir protokolas, ir client'as)
-
+pvz komanda(kaip prisijungt prie webo): telnet 10.10.7.242 80
 ^----------NETWORKING CONCEPTS--------------^
+
 
 
 v----------NETWORKING ESSENTIALS--------------v
 
 *-DHCP-*
-DNS - domain name system
-DHCP - The Dynamic Host Configuration Protocol(protokolas automatiškai paskirstantis lokalius ip adresus, laptopai
-ir telefonai turi juos is karto(by default))
+	DNS - domain name system
+	DHCP - The Dynamic Host Configuration Protocol(protokolas automatiškai paskirstantis lokalius ip adresus, laptopai
+	ir telefonai turi juos is karto(by default))
 
-DHCP turi 4 žingsnius - "DOGE" (yra fotke)
-1. DHCP Discove: klientas transliuoja "DHCPDISCOVER" žinutę ieškodamas DHCP serverio.
-2. DHCP Offer: serveris atsako su "DHCPOFFER" žinute su ip adresu, kuris yra laisvas klientui priimti.
-3. DHCP Request: klientas atsako su "DHCPREQUEST" žinute, kad nurodytų, kad priemė pasiūlytą ip.
-4. DHCP Acknowledge: serveris atsako su "DHCPACK" žinute patvirtinant, kad klientui yra priskirtas pasiūlyas ip adresas.
+	DHCP turi 4 žingsnius - "DOGE" (yra fotke)
+	1. DHCP Discove: klientas transliuoja "DHCPDISCOVER" žinutę ieškodamas DHCP serverio.
+	2. DHCP Offer: serveris atsako su "DHCPOFFER" žinute su ip adresu, kuris yra laisvas klientui priimti.
+	3. DHCP Request: klientas atsako su "DHCPREQUEST" žinute, kad nurodytų, kad priemė pasiūlytą ip.
+	4. DHCP Acknowledge: serveris atsako su "DHCPACK" žinute patvirtinant, kad klientui yra priskirtas pasiūlyas ip adresas.
 *-DHCP-*
 
 *-ARP-*
-ARP - Address Resolution Protocol(atsakingas uz MAC adresų ieškojamą - ieško transliuodamas "who has this IP address", 
-kuriam atsako "{ieškomas IP} is at {ieškomo ip MAC adresas}")
-ARP priklauso 2-am sluoksniui(Data Link), nes "užsiima" su MAC adresais
+	ARP - Address Resolution Protocol(atsakingas uz MAC adresų ieškojamą - ieško transliuodamas "who has this IP address", 
+	kuriam atsako "{ieškomas IP} is at {ieškomo ip MAC adresas}")
+	ARP priklauso 2-am sluoksniui(Data Link), nes "užsiima" su MAC adresais
 *-ARP-*
 
 
 *-ICMP-*
-ICMP - Internet Control Message Protocol(pagrinde naudojamas tinklo diagnostikom ir klaidu raportavimui, pagrindines komando: "ping" ir "traceroute")
+	ICMP - Internet Control Message Protocol(pagrinde naudojamas tinklo diagnostikom ir klaidu raportavimui, pagrindines komando: "ping" ir "traceroute")
 
-ping: naudojama patikrinti ryšiui(ar jis yra), paskaičiuoti RTT(round-trip time) siunciant echo request'a (ICMP Type 8), 
-requesto gavejas atsako su Echo Reply(ICMP Type 0)
+	ping: naudojama patikrinti ryšiui(ar jis yra), paskaičiuoti RTT(round-trip time) siunciant echo request'a (ICMP Type 8), 
+	requesto gavejas atsako su Echo Reply(ICMP Type 0)
 
-traceroute("tracert" windows'uose): naudojamas atrasti kelia nuo hosto iki taikini(target'o) - parodo visus(jei išeina, nes dauguma 
-gali ir nepasirodyti) routerius, kurie yra tarp hosto ir targeto atskleidziant ju ip adresus. kartojant ta pacia komanda rezutatas gali keistis.
-TTL - time to live
+	traceroute("tracert" windows'uose): naudojamas atrasti kelia nuo hosto iki taikini(target'o) - parodo visus(jei išeina, nes dauguma 
+	gali ir nepasirodyti) routerius, kurie yra tarp hosto ir targeto atskleidziant ju ip adresus. kartojant ta pacia komanda rezutatas gali keistis.
+	TTL - time to live
 
-abi komandos naudoja ICMP padaryti, tai ka daro.
+	abi komandos naudoja ICMP padaryti, tai ka daro.
 *-ICMP-*
 
 
 *-ROUTING-*
-keli pagrindinių routing'o protokolų pvz:
-1. OSPF (Open Shortest Path First) - greičiausias būdas - routeriai dalinasi info tarpusavy apie jū topologiją(fizinį išdėstymą), taip 
-kiekvienas routeris žino visą tinklo žemėlapį ir gali nustatyti greičiausią maršrutą(route'ą).
-2. EIGRP (Enhanced Interior Gateway Routing Protocol) - leidžia dalintis routereiams info, tada jie su algoritmais 
-paskaičiuoja efektyviausią/labiausiai apsimokantį būdą perduoti duomenis.
-3. BGP (Border Gateway Protocol) - pagrinde naudojamas internetui(ne lokaliam tinklui), jis leidžia skirtingiems tinklams dalintis rout'ingo info 
-ir įsteigti(establish'int) kelius duomenims keliauti. BGP gali padėti maršrutizuoti(routinti) duomenims per internetą, net per daug skirtingų tinklų.
-4. RIP (Routing Information Protocol) - paprastas protokolas, dažniausiai naudojamas mažiems tinklams. routeriai dalinasi info apie tinklus, 
-kuriuos gali pasiekti ir apie routerius(hops), kurių jiems reikia, kad iki ten nusigautų. Rezultate, kiekvienas routeris susidaro routing table ir 
-renkasi kelią, kuriam reikia mažiausiai hops'ų(routerių).
+	keli pagrindinių routing'o protokolų pvz:
+	1. OSPF (Open Shortest Path First) - greičiausias būdas - routeriai dalinasi info tarpusavy apie jū topologiją(fizinį išdėstymą), taip 
+	kiekvienas routeris žino visą tinklo žemėlapį ir gali nustatyti greičiausią maršrutą(route'ą).
+	2. EIGRP (Enhanced Interior Gateway Routing Protocol) - leidžia dalintis routereiams info, tada jie su algoritmais 
+	paskaičiuoja efektyviausią/labiausiai apsimokantį būdą perduoti duomenis.
+	3. BGP (Border Gateway Protocol) - pagrinde naudojamas internetui(ne lokaliam tinklui), jis leidžia skirtingiems tinklams dalintis rout'ingo info 
+	ir įsteigti(establish'int) kelius duomenims keliauti. BGP gali padėti maršrutizuoti(routinti) duomenims per internetą, net per daug skirtingų tinklų.
+	4. RIP (Routing Information Protocol) - paprastas protokolas, dažniausiai naudojamas mažiems tinklams. routeriai dalinasi info apie tinklus, 
+	kuriuos gali pasiekti ir apie routerius(hops), kurių jiems reikia, kad iki ten nusigautų. Rezultate, kiekvienas routeris susidaro routing table ir 
+	renkasi kelią, kuriam reikia mažiausiai hops'ų(routerių).
 *-ROUTING-*
 
 
@@ -110,8 +111,8 @@ NAT - Network Address Translation (kaip supratau tiesiog išskirsto internal ir 
 ^----------NETWORKING ESSENTIALS--------------^
 
 
-V----------NETWORKING CORE PROTOCOLS--------------V
 
+V----------NETWORKING CORE PROTOCOLS--------------V
 
 HTTP - Hypertext Transfer
 FTP - File Transfer Protocol 
@@ -120,12 +121,134 @@ POP3 - Post Office Protocol Version 3
 IMAP - The Internet Message Access Protocol 
 
 *-DNS: Remembering ADdresses-*
-A Record - Address record
-AAAA Record - kai address record, bet naudojamas IPV6
-AAA Record - Authentication, Authorization, and Accounting
-CNAME Record - The CNAME (Canonical Name) 
-MX Record - The MX (Mail Exchange) record
+	A Record - Address record
+	AAAA Record - kai address record, bet naudojamas IPV6
+	AAA Record - Authentication, Authorization, and Accounting (ne prie ko sitoj temoj)
+	CNAME Record - The CNAME (Canonical Name) 
+	MX Record - The MX (Mail Exchange) record
 
+	"nslookup <domenas>" -naudojama paziuret ip adresa, lokacija norimo domeno
+*-DNS: Remembering ADdresses-*
+
+
+*-WHOIS-*
+	"whois <domain>" - parodo info apie domena, jo visa registracijos info
+*-WHOIS-*
+
+
+*-HTTP(S): Accessing the Web-*
+	populiarios web servu komandos:
+		GET retrieves data from a server, such as an HTML file or an image.
+		POST allows us to submit new data to the server, such as submitting a form or uploading a file.
+		PUT is used to create a new resource on the server and to update and overwrite existing information.
+		DELETE, as the name suggests, is used to delete a specified file or resource on the server.
+		
+	pvz kaip prisijungt prie http servo: 
+	telnet 10.10.7.242 80
+
+	pvz kaip tada kazka "pasiimt" is ten: 
+	GET /flag.html HTTP/1.1
+	Host: 10.10.7.242
+*-HTTP(S): Accessing the Web-*
+
+
+*-FTP: Transferring Files-*
+	ftp(File Transfer Protocol)
+
+	 komandų pavyzdziai, kurios aprašytos FTP protokolo:
+		USER is used to input the username
+		PASS is used to enter the password
+		RETR (retrieve) is used to download a file from the FTP server to the client.
+		STOR (store) is used to upload a file from the client to the FTP server.
+
+	FTP (by default)klauso TCP 21-o porto
+
+	su ftp galima prisijungt, pvz: ftp 10.10.7.242
+	prisijungus galima naudot "ls"
+	galima naudot "type ascii" - switched to ASCII mode as this is a text file(bbz kdl, 
+	nesvarbu ar su tuo ar be - parsisiuntus su "get" txt faila, rezultatas identiskas)
+	galima parsisiust failus is ten, pvz: "get coffee.txt" - "get" paverciamas i "RETR" ir siunciamas serveriui
+*-FTP: Transferring Files-*
+
+
+*-SMTP: Sending Email-*
+	Simple Mail Transfer Protocol (SMTP) is a protocol used to send the email to an SMTP server, 
+	more specifically to a Mail Submission Agent (MSA) or a Mail Transfer Agent (MTA).
+
+	komandu pvz, kurios naudojamos mail'o kliento, kai jis perduoda(transfers) emaila i SMTP serveri
+
+		HELO or EHLO initiates an SMTP session
+		MAIL FROM specifies the sender’s email address
+		RCPT TO specifies the recipient’s email address
+		DATA indicates that the client will begin sending the content of the email message
+		. is sent on a line by itself to indicate the end of the email message
+
+	naudojimo pvz:
+	telnet 10.10.7.242 25
+	*V--kai prisijungia jau --V*
+	HELO client.thm (inicijuoja sesija)
+	MAIL FROM: <user@client.thm> (nurodo siunteja)
+	RCPT TO: <strategos@server.thm> (nurodo gaveja)
+	DATA (nurodo, kad klientas prades siusti emailo zinutes turinį - po sito reikia pradeti vesti emailo info(sekancios 6eilutes))
+	From: user@client.thm
+	To: strategos@server.thm
+	Subject: Telnet email
+
+	Hello. I am using telnet to send you an email!
+	.	(svarbus taškas, ne netyčia - nurodo kada emailo žinutė jau pilnai paruošta)
+*-SMTP: Sending Email-*
+
+
+*-POP3: Receiving Email-*
+
+	POP3(Post Office Protocol Version 3) - an alternative protocol for receiving emails that downloads emails from 
+	the server to a local device. Using POP3, a recipient cannot access their emails again from a different device 
+	because they are stored locally and then deleted from the email server.
+	
+	POP3 default port: 110
+	
+	vienos populiariausių POP3 komandų:
+		USER <username> identifies the user
+		PASS <password> provides the user’s password
+		STAT requests the number of messages and total size
+		LIST lists all messages and their sizes
+		RETR <message_number> retrieves the specified message
+		DELE <message_number> marks a message for deletion
+		QUIT ends the POP3 session applying changes, such as deletions
+
+	pvz kaip prisijungt prie pop3 srv ir paziureti/gauti(retrieve) zinute(ketvirta siuo atveju):
+		telnet 10.10.7.242 110
+		*V--kai prisijungia jau --V*
+		USER linda
+		PASS Pa$$123
+		RETR 4
+*-POP3: Receiving Email-*
+
+
+*-IMAP: Synchronizing Email-*
+	IMAP (Internet Message Access Protocol) - naudojamas sinkroniuzuojant sinkronizuojant pasto dezute(mailbox) 
+	per ne viena irengini bei leidzia zinuciu skaityma, perkelima, trynima(read, moved, and deleted).
+	
+	IMAP komandų pvz:
+		LOGIN <username> <password> authenticates the user
+		SELECT <mailbox> selects the mailbox folder to work with
+		FETCH <mail_number> <data_item_name> Example fetch 3 body[] to fetch message number 3, header and body.
+		MOVE <sequence_set> <mailbox> moves the specified messages to another mailbox
+		COPY <sequence_set> <data_item_name> copies the specified messages to another mailbox
+		LOGOUT logs out
+	
+	IMAP src default port: 143
+	pvz kaip prisijungt ir gauti zinute, kuria pries tai išsiunčiau("SMTP: Sending Email" sekcijoj): 
+		telnet 10.10.41.192 143
+		*V--kai prisijungia jau --V*
+		A LOGIN strategos {cia turi but psw, bet tryhackme nedave jokio, o pavyzdy paslėpė}
+		B SELECT inbox
+		C FETCH 3 body[]	(atsiuncia pasirinkta zinute(trecia siuo atveju)
+		D LOGOUT
+*-IMAP: Synchronizing Email-*
+
+
+*VISŲ ČIA NAGRINĖTŲ PROTOKOLŲ TRANSPORT PROTOCOL YRA TIK "TCP" (IŠSKYRUS DNS - JO GALI BŪTI ARBA "TCP", ARBA "UDP")*
 
 ^----------NETWORKING CORE PROTOCOLS--------------^
 
