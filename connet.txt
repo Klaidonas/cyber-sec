@@ -3,8 +3,6 @@ from linux to linux:
 ssh {username arba tsg tryhackme}@{IP}
 psw> password
 
-kaip pazet ar yra ssh:
-
+kaip pazet atidarytus portus(ar yra ssh - port 22):
 nmap <target's ip>
 ->
-*jei ismeta kazkuri service su portu "22" - yra galimas prisijungimas su ssh, jei ne - ne
