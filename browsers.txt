@@ -7,3 +7,7 @@ o Censys: Internet-connected hosts, websites, certificates, and other Internet a
 
 virustotal: https://www.virustotal.com/gui/
 virusu skanavimo irankis (urls, links)
+
+
+nd:
++ prie esamo nd + 2 stulpeliai(yra fotke)
