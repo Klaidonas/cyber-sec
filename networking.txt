@@ -252,3 +252,10 @@ IMAP - The Internet Message Access Protocol
 
 ^----------NETWORKING CORE PROTOCOLS--------------^
 
+
+
+V----------NETWORKING CORE PROTOCOLS--------------V
+
+*-Networking Secure Protocols-*
+	IETF - he Internet Engineering Task Force
+	CA (arba A) - Certificate Authority (kur isduoda pvz TLS, SSL sertifikata)
