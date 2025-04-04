@@ -1,0 +1,30 @@
+25-04-04
+the 10 technology security controls:
+	1. roles & responsibilities
+	2. training
+	3. incident response
+	4. backup & restore
+	5. portable media
+	6. asset inventory
+	7. network segmentation
+	8. log collection & detection
+	9. secure configuration
+	10. patching
+
+physical security controls:
+	lockas & keys
+	access cards or badges
+	biometric systems
+	backup generators
+	alarm systems
+	humidity control systems
+	cctv
+	motion sensors or surveillance cameras
+	gates or fences
+
+technical security controls:
+	firewalls
+	endpoint detection and response systemsdata encryption
+	access control lists
+	network segmentation
+	patch management systems

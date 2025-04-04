@@ -38,7 +38,7 @@ TCP ryšys yra įsteigiamas naudojant "three-way handshake", kuriuo metu dvi vel
 kai ryšys įsitvirtina, "SYN" flag'ų nebeatsiranda.
 Pvz kur naudojama: Webuose, emailuose(smtp, imap), file transfers(ftp, dropbox).
 
-**Apibendrintai: UDP - pigesnė TCP versija(UDP:fast beats perfect, TCP: must arrive perfectly).**
+**Apibendrintai: UDP - "pigesnė" ir ne visa laika tais paciais tikslais naudojama TCP versija(UDP:fast beats perfect, TCP: must arrive perfectly).**
 
 Encapsulation - kai keliaujantiems duomenims pereinant per kiekvieną sluoksnį(OSI layer) yra pridedamas 
 header'is(arba kartais trailer'is(tokiu atveju dazniausiai data link(2-am) sluoksnyje))
@@ -254,8 +254,68 @@ IMAP - The Internet Message Access Protocol
 
 
 
-V----------NETWORKING CORE PROTOCOLS--------------V
+V----------NETWORKING SECURE PROTOCOLS--------------V
 
-*-Networking Secure Protocols-*
 	IETF - he Internet Engineering Task Force
 	CA (arba A) - Certificate Authority (kur isduoda pvz TLS, SSL sertifikata)
+	
+	*-HTTPS-*
+		ryšio(connectiono) įsteigimas su web naršykle per HTTP:
+			1: Establish a TCP three-way handshake with the target server
+			2: Communicate using the HTTP protocol; for example, issue HTTP requests, such as GET / HTTP/1.1
+			
+		ryšio(connectiono) įsteigimas per HTTPS:
+			Establish a TCP three-way handshake with the target server
+			Establish a TLS session
+			Communicate using the HTTP protocol; for example, issue HTTP requests, such as GET / HTTP/1.1
+		
+		*kaip per http - perziurint traffic packetus galima pamatyti ka +- vartotojas daro,
+		jei per https - rodo nesamones
+	*-HTTPS-*
+
+	
+	*-SMTPS, POP3S, and IMAPS-*
+		kaip galima apsaugoti http su tls - padarant https, tas pats galioja ir SMTP, POP3, bei IMAP
+		protokolai su default'iniais port'ais:
+		
+		HTTP - 80
+		SMTP - 25
+		POP3 - 110
+		IMAP - 143
+			
+		HTTPS - 443
+		SMTPS - 465 IR 587
+		POP3S - 995
+		IMAPS - 993
+	*-SMTPS, POP3S, and IMAPS-*
+
+	*-SSH-*
+		SSH buvo sukurtas 1996(jo antra versija - kuria dabar naudojam), 1999 the OpenBSD developeriai išleido OpenSSH, an atviro kodo(open-source) implementacija of SSH
+		OPENSSH benefits:
+			Secure authentication: Besides password-based authentication, SSH supports public key and two-factor authentication.
+			Confidentiality: OpenSSH provides end-to-end encryption, protecting against eavesdropping. 
+			Furthermore, it notifies you of new server keys to protect against man-in-the-middle attacks.
+			Integrity: In addition to protecting the confidentiality of the exchanged data, cryptography also protects the integrity of the traffic.
+			Tunneling: SSH can create a secure “tunnel” to route other protocols through SSH. This setup leads to a VPN-like connection.
+			X11 Forwarding: If you connect to a Unix-like system with a graphical user interface, SSH allows you to use the graphical application over the network.
+	*-SSH-*
+
+
+	*-SFTP and FTPS-*
+		FTPS default port: 990 (FTP - 21)
+		SFTP(SSH File Transfer Protocol) - leidžia apsaugoti failų perdavimą. Default port: 22
+		SFTP nera tas pats kaip FTPS - FTPS naudoja TLS, o SFTP - SSH.
+	*-SFTP and FTPS-*
+
+
+	*-VPN-*
+		VPN - Virtual Private Network
+		yra fotke su pvz kaip veikia VPN
+	*-VPN-*
+
+	*-FINAL NOTES-*
+		kaip dekriptuot secure traffica(wireshark'e): {right click} ant TLSv1.3(bbz gal su kitais irgi veikia -turi tsg veikt per TLS protokola) ->
+		transport layer security -> open tranport layer security preferences -> įrašyt 9pre)-Master-Secred log filename (ssl key)
+	*-FINAL NOTES-*
+
+^----------NETWORKING SECURE PROTOCOLS--------------^
