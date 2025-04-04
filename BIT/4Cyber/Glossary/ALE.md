@@ -1,0 +1,1 @@
+ALE (Annual Loss Expectancy) represents the expected monetary loss for an asset due to a risk over a year. It is calculated by multiplying the Annual Rate of Occurrence ([[ARO]]) by the Single Loss Expectancy ([[SLE]])

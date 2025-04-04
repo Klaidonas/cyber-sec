@@ -1,0 +1,10 @@
+up::[[(H) Policies and procedures regarding the use of cryptography and, where appropriate, encryption]]
+
+- [[Safeguard 3.6 - Encrypt Data on End-User Devices]]
+- [[Safeguard 3.9 - Encrypt Data on Removable Media]]
+- [[Safeguard 3.10 - Encrypt Sensitive Data in Transit]]
+- [[Safeguard 3.11 - Encrypt Sensitive Data at Rest]]
+- [[Safeguard 4.9 - Configure Trusted DNS Servers on Enterprise Assets]]
+- [[Safeguard 12.3 - Securely Manage Network Infrastructure]]
+- [[Safeguard 12.6 - Use of Secure Network Management and Communication Protocols]]
+- [[Safeguard 12.7 - Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure]]

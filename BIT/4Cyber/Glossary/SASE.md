@@ -1,0 +1,1 @@
+Secure access service edge, often abbreviated (SASE), is a security framework that converges software-defined wide area networking (SD-WAN) and Zero Trust security solutions into a converged cloud-delivered platform that securely connects users, systems, endpoints, and remote networks to apps and resources.

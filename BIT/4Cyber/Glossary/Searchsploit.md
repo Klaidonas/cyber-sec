@@ -1,0 +1,3 @@
+Searchsploit is a tool that is available on popular pentesting distributions such as [[Kali Linux]]. This tool is an offline copy of [[Exploit-DB]], containing copies of exploits on your system. 
+
+You are able to search searchsploit by application name and/or [[vulnerability]] type. For example, in the snippet below, we are searching searchsploit for exploits relating to [[Wordpress]] that we can use – no downloading necessary!

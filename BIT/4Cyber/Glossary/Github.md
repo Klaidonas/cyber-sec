@@ -1,0 +1,5 @@
+[GitHub](https://github.com/) is a popular web service designed for software developers. The site is used to host and share the source code of applications to allow a collaborative effort. However, security researchers have taken to this platform because of the aforementioned reasons as well. Security researchers store & share [[PoC]]’s (Proof of Concept) on GitHub, turning it into an exploit database in this context.
+
+GitHub is extremely useful in finding rare or fresh exploits because anyone can create an account and upload – there is no formal verification process like there is with alternative exploit databases. With that said, there is also a downside in that [[PoC]]’s may not work where little to no support will be provided.
+
+GitHub uses a tagging and keyword system, meaning that we can search GitHub by keywords such as “[[PoC]]”, “[[vulnerability]]”, and many more. At the time of writing, there are 9,682 repositories with the keyword “[[CVE]]”. We are also able to filter the results by programming language.

@@ -1,0 +1,10 @@
+up::[[(D) Supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers]]
+
+- [[Safeguard 8.12 - Collect Service Provider Logs]]
+- [[Safeguard 15.1 - Establish and Maintain an Inventory of Service Providers]]
+- [[Safeguard 15.2 - Establish and Maintain a Service Provider Management Policy]]
+- [[Safeguard 15.3 - Classify Service Providers]]
+- [[Safeguard 15.4 - Ensure Service Provider Contracts Include Security Requirements]]
+- [[Safeguard 15.5 - Assess Service Providers]]
+- [[Safeguard 15.6 - Monitor Service Providers]]
+- [[Safeguard 15.7 - Securely Decommission Service Providers]]

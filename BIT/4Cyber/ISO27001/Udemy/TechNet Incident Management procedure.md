@@ -1,0 +1,3 @@
+up::[[Incident management procedure]]
+
+- Clear roles for reporting, internally and externally, via designated channels. ● Systematic assessment for classifying as incidents, events, or weaknesses. ● Effective incident resolution with technical and procedural measures. ● Post-incident "review and learning" phase for process improvement. ● Monitor incident metrics for trends, patterns, and high-impact cases. ● Handling evidence meticulously for legal or disciplinary actions, considering media and devices.

@@ -1,0 +1,1 @@
+RTO (Recovery Time Objective): This is the maximum acceptable amount of time that a system or application can be down after a failure or disaster. It defines the target time for recovery.

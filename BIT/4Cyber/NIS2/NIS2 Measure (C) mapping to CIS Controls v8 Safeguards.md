@@ -1,0 +1,11 @@
+up::[[(C) Business continuity, such as backup management and disaster recovery, and crisis management]]
+
+- [[Safeguard 11.1 - Establish and Maintain a Data Recovery Process]]
+- [[Safeguard 11.2 - Perform Automated Backups]]
+- [[Safeguard 11.3 - Protect Recovery Data]]
+- [[Safeguard 11.4 - Establish and Maintain an Isolated Instance of Recovery Data]]
+- [[Safeguard 11.5 - Test Data Recovery]]
+- [[Safeguard 17.1 - Designate Personnel to Manage Incident Handling]]
+- [[Safeguard 17.4 - Establish and Maintain an Incident Response Process]]
+- [[Safeguard 17.5 - Assign Key Roles and Responsibilities]]
+- [[Safeguard 17.6 - Define Mechanisms for Communicating During Incident Response]]

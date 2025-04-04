@@ -1,0 +1,7 @@
+up:: [[IV Skyrius KEITIMASIS INFORMACIJA IR TARPINSTITUCINIS BENDRADARBIAVIMAS]]
+
+1**.** Kibernetinio saugumo politikos formavimo ir įgyvendinimo institucijos šio įstatymo tikslais gauta informacija, įskaitant asmens duomenis ir konfidencialią informaciją, turi teisę keistis tarpusavyje, su kitų valstybių institucijomis, NATO ir Europos Sąjungos institucijomis ir tarptautinėmis organizacijomis tik tiek, kiek tai yra būtina šių institucijų funkcijoms pagal kompetenciją atlikti, atsižvelgiant į keitimosi informacija tikslą ir proporcingumą.
+
+2. Kibernetinio saugumo politikos formavimo ir įgyvendinimo institucijos, tvarkydamos šio įstatymo tikslais gautą informaciją, saugo asmenų saugumo ir komercinius interesus, taip pat pateiktos informacijos konfidencialumą. Šioje dalyje nurodyta informacija teikiama tik tais atvejais, jeigu teisė gauti šią informaciją yra nustatyta įstatymuose ar jų pagrindu priimtuose kituose norminiuose teisės aktuose.
+
+3. Kibernetinio saugumo politikos formavimo ir įgyvendinimo institucijos šio įstatymo tikslais tvarkomus asmens duomenis tvarko laikydamosi Lietuvos Respublikos asmens duomenų teisinės apsaugos įstatymo, Reglamento [(ES) 2016/679](http://eur-lex.europa.eu/legal-content/LIT/TXT/?uri=CELEX:3679R2016&locale=lt) ir Lietuvos Respublikos asmens duomenų, tvarkomų nusikalstamų veikų prevencijos, tyrimo, atskleidimo ar baudžiamojo persekiojimo už jas, bausmių vykdymo arba nacionalinio saugumo ar gynybos tikslais, teisinės apsaugos įstatymu.

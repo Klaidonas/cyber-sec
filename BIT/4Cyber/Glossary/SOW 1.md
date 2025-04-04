@@ -1,0 +1,1 @@
+A Statement of Work (SOW) is a document within a contract that describes the work requirements for a specific project along with its performance and design expectations. The main purpose of the SOW is to define the liabilities, responsibilities and work agreements between two parties, usually clients and service providers.

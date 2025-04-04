@@ -1,0 +1,1 @@
+Procedures are detailed steps that describe how a process step will be performed.

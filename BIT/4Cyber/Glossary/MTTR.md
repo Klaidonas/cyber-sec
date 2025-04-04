@@ -1,0 +1,1 @@
+MTTR (Mean Time to Repair): This measures the average time it takes to repair a system or component after a failure. It is used to assess how quickly an organization can respond to and fix issues

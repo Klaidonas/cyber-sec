@@ -1,0 +1,1 @@
+Much like other services such as [[Exploit DB]] and [[NVD]], [Rapid7](https://www.rapid7.com/db/) is a [[vulnerability]] research database. The only difference being that this database also acts as an exploit database. Using this service, you can filter by type of [[vulnerability]] (I.e. application and operating system).

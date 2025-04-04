@@ -1,0 +1,21 @@
+up:: [[ISO 27001 Standard]]
+
+ISO (Tarptautinė standartizacijos organizacija) ir IEC (Tarptautinė elektrotechnikos komisija) sudaro specializuotą pasaulinės standartizacijos sistemą. Nacionalinės institucijos, kurios yra ISO arba IEC narės, dalyvauja rengiant tarptautinius standartus, prisijungdamos prie technikos komitetų, kuriuos atitinkama organizacija įsteigia, siekdama spręsti tam tikrų techninės veiklos sričių klausimus. ISO ir IEC technikos komitetai bendradarbiauja abiem organizacijoms svarbiose srityse. Darbe taip pat dalyvauja su ISO ir IEC bendradarbiaujančios tarptautinės vyriausybinės ir nevyriausybinės organizacijos.
+
+Procedūros, naudojamos šiam dokumentui parengti ir toliau jam prižiūrėti, aprašytos ISO/IEC direktyvų 1 dalyje. Pirmiausia reikėtų atkreipti dėmesį į skirtingus patvirtinimo kriterijus, taikomus skirtingų tipų dokumentams. Šis dokumentas parengtas pagal ISO/IEC direktyvų 2 dalyje pateiktas leidybos taisykles (žr. [](https://www.iso.org/directives-and-policies.html)[www.iso.org/directives](https://www.iso.org/directives-and-policies.html) [](https://www.iso.org/directives-and-policies.html)arb[a](https://www.iec.ch/members_experts/refdocs) [www.iec.ch/members_experts/refdocs](https://www.iec.ch/members_experts/refdocs)[)](https://www.iec.ch/members_experts/refdocs).
+
+Atkreipiamas dėmesys į tai, kad kai kurie šio dokumento elementai gali būti patentų teisių objektas. ISO ir IEC negali būti atsakingos už kai kurių arba visų šių patentų teisių nustatymą. Išsami informacija apie visas patentų teises, nustatytas rengiant šį dokumentą, bus pateikta _Įvade_ ir (arba) ISO gautų patentų deklaracijų sąraše (žr[.](https://www.iso.org/iso-standards-and-patents.html) [www.iso.org/patents](https://www.iso.org/iso-standards-and-patents.html)[)](https://www.iso.org/iso-standards-and-patents.html) arba IEC gautų patentų deklaracijų sąraše (žr. [](https://patents.iec.ch/)[https://patents.iec.ch](https://patents.iec.ch/)[)](https://patents.iec.ch/).
+
+Bet kuris šiame dokumente naudojamas prekės pavadinimas yra informacija, skirta naudotojų patogumui, ir nėra jo patvirtinimas.
+
+Dėl standartų savanoriško taikymo pobūdžio, dėl specialiųjų ISO terminų ir posakių, susijusių su atitikties vertinimu, reikšmės paaiškinimo, taip pat dėl informacijos apie tai, kaip ISO laikosi Pasaulio prekybos organizacijos (PPO) principų dėl techninių prekybos kliūčių (TPK), žr. [](https://www.iso.org/iso/foreword.html)[www.iso.org/iso/foreword.html](https://www.iso.org/iso/foreword.html)[.](https://www.iso.org/iso/foreword.html) IEC svetainėje žr[.](https://www.iec.ch/understanding-standards) [www.iec.ch/understanding](https://www.iec.ch/understanding-standards)[-](https://www.iec.ch/understanding-standards)[standards](https://www.iec.ch/understanding-standards)[.](https://www.iec.ch/understanding-standards)[](https://www.iec.ch/understanding-standards)
+
+Šį dokumentą parengė jungtinio technikos komiteto ISO/IEC JTC 1 _Information Technology_ (_Informacinės technologijos_) pakomitetis SC 27 _Information security, cybersecurity and privacy protection_ (_Informacijos saugumas, kibernetinis saugumas ir privatumo apsauga_).
+
+Šis trečiasis leidimas panaikina ir pakeičia antrąjį leidimą (ISO/IEC 27001:2013), kuris buvo techniškai peržiūrėtas. Į jį taip pat įtraukiamos techninės pataisos ISO/IEC 27001:2013/Cor 1:2014 ir ISO/IEC 27001:2013/Cor 2:2015.
+
+Pagrindiniai pakeitimai yra šie:
+
+–                tekstas suderintas su darniąja valdymo sistemų standartų ir ISO/IEC 27002:2022 struktūra.
+
+Visi su šiuo dokumentu susiję atsiliepimai arba klausimai turėtų būti teikiami naudotojo nacionalinei standartizacijos institucijai. Visą šių institucijų sąrašą galima rasti [www.iso.org/members.html](https://www.iso.org/members.html) [](https://www.iso.org/members.html)ir [www.iec.ch/national](https://www.iec.ch/national-committees)[-](https://www.iec.ch/national-committees)[committees](https://www.iec.ch/national-committees)[.](https://www.iec.ch/national-committees)[](https://www.iec.ch/national-committees)

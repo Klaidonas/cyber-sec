@@ -1,0 +1,4 @@
+informacijos saugos rizikos valdymas
+
+valdymas - pastovu spredimų priėmimo ir vadybos procesas, paremtas tam tikrais lūkesčiais ir galia
+negalima tik tech zmonem palikti spresti imoned problemu - tik techninem priemonem neina isspresti visu problemu

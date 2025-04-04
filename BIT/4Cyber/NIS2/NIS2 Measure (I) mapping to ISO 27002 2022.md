@@ -1,0 +1,15 @@
+up::[[(I) Human resources security, assess control policies and asset management]]
+
+Annex A
+- [[ISO 27002 2022_5.9 Inventory of information and other associated assets]]
+- [[ISO 27002 2022_5.10 Acceptable use of information and other associated assets]]
+- [[ISO 27002 2022_5.11 Return of assets]]
+- [[ISO 27002 2022_5.15 Access control]]
+- [[ISO 27002 2022_5.16 Identity management]]
+- [[ISO 27002 2022_5.17 Authentication information]]
+- [[ISO 27002 2022_5.18 Access rights]]
+- [[ISO 27002 2022_6.1 Screening]]
+- [[ISO 27002 2022_6.2 Terms and conditions of employment]]
+- [[ISO 27002 2022_6.4 Disciplinary process]]
+- [[ISO 27002 2022_6.5 Responsibilities after termination or change of employment]]
+- [[ISO 27002 2022_6.6 Confidentiality or non-disclosure agreements]]

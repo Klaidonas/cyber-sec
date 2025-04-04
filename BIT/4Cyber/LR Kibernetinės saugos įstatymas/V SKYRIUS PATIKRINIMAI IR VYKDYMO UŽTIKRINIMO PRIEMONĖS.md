@@ -1,0 +1,10 @@
+up:: [[Lietuvos Respublikos Kibernetinės saugos įstatymas]]
+
+[[26 straipsnis. Kibernetinio saugumo subjektų patikrinimai]]
+[[27 straipsnis. Bendrieji kibernetinio saugumo subjektų patikrinimų atlikimo pagrindai]]
+[[28 straipsnis. Vykdymo užtikrinimo priemonės]]
+[[29 straipsnis. Pažeidimai, dėl kurių taikomos vykdymo užtikrinimo priemonės]]
+[[30 straipsnis. Baudos]]
+[[31 straipsnis. Baudų skyrimo tvarka]]
+[[32 straipsnis. Laikinas teisės užsiimti dalimi ar visa esminio subjekto vykdoma veikla ar teikti paslaugas sustabdymas]]
+[[33 straipsnis. Esminio subjekto vadovo laikinas nušalinimas nuo pareigų]]

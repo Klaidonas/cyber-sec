@@ -1,0 +1,3 @@
+up:: [[ISO 27001 Standard]]
+
+Šiame dokumente nurodomi informacijos saugumo valdymo sistemos sukūrimo, įdiegimo, priežiūros ir nuolatinio gerinimo organizacijos kontekste reikalavimai. Šis dokumentas taip pat apima su informacijos saugumu susijusių rizikų vertinimo ir priežiūros reikalavimai, pritaikyti organizacijos poreikiams. Šiame dokumente išdėstyti reikalavimai yra bendro pobūdžio ir yra skirti taikyti visoms organizacijoms, nepriklausomai nuo jų tipo ar dydžio ar pobūdžio. Kai organizacija siekia atitikties šiam dokumentui, kurių nors 4–10 skyriuose nurodytų reikalavimų neįtraukimas yra nepriimtinas.

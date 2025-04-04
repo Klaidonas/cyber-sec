@@ -1,0 +1,1 @@
+ARO (Annualized Rate of Occurrence): This estimates the frequency with which a specific risk or event is expected to occur in a year. It helps in assessing the likelihood of risks.

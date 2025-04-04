@@ -1,0 +1,1 @@
+A policy sets out the strategic direction of the organisation as decided by senior management. Usually, a policy lays out a destination, but does not give any direction about how this must be executed. These are guidelines that drive the organisation, its processes and procedures.

@@ -1,0 +1,22 @@
+network traffic monitoring
+ijungimas
+(del viso pikto, kad nekonfliktuotu):
+sudo airmon-ng check kill
+
+monitor mode ijungimas:
+rast koks bssidir channel: 
+sudo airmon-ng start wlp8s0mon
+
+paleist 
+
+srauto gaudymas:
+paleist wireshark arba airodump-ng ant wlp8s0mon
+sudo airodump-ng --bssid D0:D4:12:90:92:D8 --channel 11 --write capture wlp8s0mon
+
+
+isjungimas:
+isjungt stebejima/handshake'u gaudyma: 
+sudo airmon-ng stop wlp8s0mon
+
+restarting network(nes nera intiko kai monitorinimas networkas): 
+sudo systemctl restart NetworkManager

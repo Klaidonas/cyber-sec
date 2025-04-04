@@ -1,0 +1,1 @@
+MTBF (Mean Time Between Failures): This measures the average time between failures of a system or component. It is used to predict the reliability and performance of systems over time.

@@ -1,0 +1,7 @@
+up: [[III Skyrius KIBERNETINIO SAUGUMO SUBJEKTŲ IDENTIFIKAVIMAS IR ŠIŲ SUBJEKTŲ PAREIGOS]]
+
+1. Vykdydamas esminių subjektų valdomų ir (ar) tvarkomų tinklų ir informacinių sistemų stebėseną, siekdamas realiu laiku arba beveik realiu laiku identifikuoti kibernetines grėsmes ir kibernetinius incidentus, Nacionalinis kibernetinio saugumo centras esminių subjektų tinklų ir informacinėse sistemose diegia ir valdo technines kibernetinio saugumo priemones. Svarbių subjektų valdomose ir (ar) tvarkomose tinklų ir informacinėse sistemose techninės kibernetinio saugumo priemonės gali būti diegiamos jų prašymu, siekiant suvaldyti kibernetinius incidentus.
+
+2. Krašto apsaugos ministras nustato techninių kibernetinio saugumo priemonių diegimo ir valdymo kibernetinio saugumo subjektų valdomose ir (ar) tvarkomose tinklų ir informacinėse sistemose tvarką, tvirtina techninių kibernetinio saugumo priemonių diegimo planą, kuriame nustato technines kibernetinio saugumo priemones, tvarkomus duomenis (jeigu jie yra tvarkomi).
+
+3. Nacionalinio kibernetinio saugumo centro lėšomis įdiegtos techninės kibernetinio saugumo priemonės techniškai prižiūrimos, jų remontas atliekamas Nacionalinio kibernetinio saugumo centro lėšomis.

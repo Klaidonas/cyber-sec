@@ -1,0 +1,10 @@
+up:: [[Lietuvos Respublikos Kibernetinės saugos įstatymas]]
+
+[[11 straipsnis. Kibernetinio saugumo subjektai]]
+[[12 straipsnis. Jurisdikcija ir teritoriškumas]]
+[[13 straipsnis. Kibernetinio saugumo subjektų registras]]
+[[14 straipsnis. Kibernetinio saugumo rizikos valdymo priemonės]]
+[[15 straipsnis. Už kibernetinį saugumą atsakingi asmenys]]
+[[16 straipsnis. Techninės kibernetinio saugumo priemonės]]
+[[17 straipsnis. Aukščiausio lygio domenų vardų registrų ir domenų vardų registravimo reikalavimai]]
+[[18 straipsnis. Pranešimai apie kibernetinius incidentus]]

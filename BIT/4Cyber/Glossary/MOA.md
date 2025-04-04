@@ -1,0 +1,3 @@
+A memorandum of agreement, or MOA, is a legal document describing a [business partnership](https://www.contractscounsel.com/t/us/business-partnership) between two parties that have agreed to cooperate to meet an agreed objective or complete a project. The memorandum lays out the agreed terms and outlines the steps to reach the desired goal of the agreement.
+
+MOAs are usually used when money is involved, but that is not always the case.

