@@ -1,0 +1,73 @@
+v----------Tcpdump: The Basics--------------v
+
+ARP(Address Resolution Protocol) - atsakingas už MAC adreso radimą pagal jo IP.
+
+libpcap - TCPdump biblioteka(library) (windows'uose cia yra winpcap)
+
+*-Basic Packet Capture-*
+	tcpdump galima naudoti ir zalia - tsg "tcpdump".
+	kad nurodyt kuri srauta(wifi/eth0/any/..) turi rodyti, naudojamas -i <interface>. Pvz: "sudo tcpdump -i ens5"
+	kad išsaugoti pagatą srautą naudojama -w <file>
+	kad skaityti packetus iš failo naudojama -r <file>
+	kad tam tikra skaiciu packetu pagaut naudojama -c <count>; be "-c" gaudys packet'us iki kol kazkas tai nutrauks
+	kad išvengt dns lookup'u(ip adresų), naudojama -n; kad nerodytų ir portu: -nn
+	kad padrodytu daugiau info apie pacius packetus: -v, kad dar daugiau -vv, kad ir dar daugiau: -vvv
+	*yra apibendrinimo su pvz fotke*
+	paprastas TCPdump pvz: tcpdump -i eth0 -c 50 -v
+*-Basic Packet Capture-*
+
+
+*-Filtering Expressions-*
+	kad matyt tik packetus, kuriais "mainosi"(exchanged) tik specifinis hostas tinkle(pvz printeris, zaidimo serveris): "host <IP>"
+	kad parinkt konkretu porta stebet: "port <PORT>"
+	*pvz komanda kad parodytu ens5 srauto tik 53(default tcp ir udp portas) porto srauta: "sudo tcpdump -i ens5 port 53 -n"*
+	kad nustatyt butent ar portas yra destinacija ar source packetu, naudojam "src port PORT_NUMBER", "dst port PORT_NUMBER"
+	kad nustatyt butent koks host ip, ar src ar dst: "src/dst host <IP>" pvz: "tcpdump -r traffic.pcap dst host 192.168.124.137"
+	galima filtruoti ir pagal protokolus: ip, ip6, udp, tco, icmp. komandos pvz: sudo tcpdump -i ens5 udp -n
+	*jei stebi icmp protokola ir matai srauta, kazkas galimai pingina mane*
+	
+	logical operators:
+		"and" - pagauna kai abu true. pvz: "sudo tcpdump host 10.10.29.47 and tcp -c 5"
+		"or" - pagauna kai bent vienas true. pvz: "sudo tcpdump udp or icmp"
+	*yra su apibendrinimu ir pvz fotke.*
+	
+	kad suskaiciuot kiek srauto faile yra eiluciu: pridet gale "| wc". pvz: "tcpdump -r traffic.pcap | wc"
+	
+	*kad rast subdomain(cia nbv niekur parasyta, bet uzduoty buvo krw): gale "| head -3" (bbz kdl)*
+*-Filtering Expressions-*
+	
+
+*-Advanced Filtering-*
+	kad filtruot pagal packetu ilgi/dydi: "greater<length>" arba "less <length>" pvz: "tcpdump -r traffic.pcap greater 10000 -c 5"
+	yra naudojamos ir binary operations - kaip programavime "&&", "||", "!", taip cia "&", "|", "!". yra fotke
+	
+	kad filtruot packetus pagal jų header'io turinį/sudėtį, nauojam "proto[expr]".
+	*cia bus viskas daroma tik TCP packetams*
+	pvz, kad atvaizduotu tik packetus tik su SYN(synchronyze) arba ACK(acknowledge) flag'ų set'ais - komanda: 
+		`tcpdump -r traffic.pcap "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"`
+	*YRA FOTKE su tcpflags*
+*-Advanced Filtering-*
+
+
+*-Displaying Packets-*
+	opticjos kaip gali būti atvaizduojami packet'ai:
+		-q: Quick output; print brief packet information
+		-e: Print the link-level header 										(parodo MAC ir IP adresus)
+		-A: Show packet data in ASCII											(parodo visus bitus realiais skaiciais, raidem, simboliais)
+		-xx: Show packet data in hexadecimal format, referred to as hexadecimal	
+		(atvaizduoja hexadeimal formatu, leidzia dar giliau paziuret į packeto bitus (octet by octet))
+		-X: Show packet headers and data in hex and ASCII						(atvaizduoja ir kaip -A(ASCII) ir kaip -xx(hexadecimal) formatais)
+	*octet - mazas blokas duomenu - 1 octet yra 8 bitai - tai gali sutalpinti skaiciu nuo 0 iki 255*
+	komandos pvz(rasti MAC adresa host'o filtruoant packetus kuriuose buvo siustas ARP requestas): `tcpdump -r traffic.pcap "arp[6:2] = 1" -e`
+		(cia is intiko išsiaiškinau(komanda virš) - THM'e nebuvo niekur apie arp filtrus). Aiškinimas: 
+			"arp" - nurodo ARP protokola;
+			"[6:2]" - reiškia: žiūrėt į 6-tą ir 7-tą ARP header'io baitus(bytes);
+			ARP'e, operacijos kodas(operation code(opcode)) yra "pasislinkęs"(offset) 6-7:
+				1 = request (who-has)
+				2 = reply (is-at)
+			Tai "arp[6:2]" pasirenka tik ARP paketus.
+			Todėl pvz, kad rasti ARP atsakymą(reply), reikėtų naudoti: `tcpdump -r traffic.pcap "arp[6:2] = 2"`
+*-Displaying Packets-*
+
+
+^----------Tcpdump: The Basics--------------^

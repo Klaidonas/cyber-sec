@@ -1,0 +1,86 @@
+
+KOMANDOS
+Linux and LAMP(Linux, apache, mySQL, php/perl/python):
+	cat
+	nano
+	grep
+	head
+	tail
+	logger
+	jkournalctl
+	chmod
+	
+veiksmai kuriuos daro (jau patekus į sistemą) vykdant ransomware ataką(idealiu atveju):
+	1. Disables factory os protection
+	2. Data Exfiltration(sometimes)
+	3. Computer / server backups being removed or corrupted
+	4. Ransomware encrypting files
+	5. Ransomware removes OS log files
+	6. Ransomware note created.
+	7. Ransomware ereases its core process from the system.	
+	
+dazniausi budai kaip populiariausios ransomware grupuotes gauna prieiga prie sistemu:
+	exploited vulnerability
+	phishing
+	compromised credentials
+	brute-force attacks
+	misconfigured service
+	malicious ttachments/downloads
+	
+žvalgyba(kaip stebi/analizuoja sistemas gavus prieiga):
+	advanced port scanner
+	netscan
+	SharpView
+	Powerview
+	...
+	
+Credential access:
+	Mimikatz:
+		sekurlsa::logonpassword
+		lsadump::sam
+	LSASS:
+		Mimikatz
+			sekurlsa::minidump
+		procdump
+		Task manager
+		rundll32.exe C/..
+		
+		
+	Slaptažodžių dešifravimas:
+		Kerberoast
+		Offline SPN password hash craccking
+		tgsreprack
+		John the Ripper
+		Hashcat
+		
+	SMB AutoBrute:
+		Invoke-SMBAutoBrute
+	Custom PowerSell scripts for password spraying
+	NTDS dump
+	
+	Kaip pavogia duomenis/failus:
+		Mega.nz
+		RClone
+		FTP Clients
+		FileZilla
+		Total Commander FTP
+		SCP Clients
+		WinSCP
+		Cloud storage services
+		
+	Defense Evasion(kaip apeina apsaugos):
+		GMER
+		Process Hacker
+		GPO
+		Indicator Removal On Host
+		wevtutil cl
+		Fsutil file setZeroData offset=0 length=<fileSize>
+		
+	kaip nustato kad ištrintu backups:
+		Inhibit System Reovery
+			bcdedit/set
+			vssadmin delete shadows /all /quiet
+			wmic shadowcopy delete
+			
+	NirSoft - nemokami geri įrankiai
+	
