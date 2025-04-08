@@ -1,0 +1,48 @@
+
+tinklo logs'ai filmuoja/fiksuoja(record) tinklo srautą.
+per tinklo log'us galima ir matytiti kokiu būdu kas prie ko bandė prisijungti, ką bandė daryti, ar iš viso pavyko prisijungti
+
+windows'uose naudojamas Wevtutil - ir hackeriai tą naudoja ir gerieji hackeriai
+
+gera, viena populeriauių log'inimo sistemų - SIEM - daugiausiai dalykų apima tinkle, renka informaciją, bet negali daryti jokių veiksmų, o tik pranešti. 
+Veiksmus gali daryti pvz "SOR"
+
+syslog: 
+	daznai automatiskai suknfiguruojamas operacines sistemos, 
+	veikia per udp protokola, per 514 porta (naujesni per TCP su 6514 portu)
+
+Syslog-ng ir Rsyslog:
+	naujesnes alternatyvos syslog'ui, dazniausiai dabar naudojamas: Rsyslog
+
+NXLog:
+	pns kaip Rsyslog;
+	palaiko ir windows OS(ne kaip rsyslog tik linux) (vstk geriau Rsyslog)
+	
+Lynux Logs lokacijos:
+	var/log/syslog
+	var/log/messages
+	var/log/boot.log
+	var/log/auth.log
+	var/log/faillog
+	/var/log/kern.log	(kai kazkas labai giliai sistemoj neveikia)
+	/var/log/httpd		(kur dazniausiai ir tikrina administratoriai)
+	
+Journalctl:
+	komanda, kad pasiimt/gaut daugiau logs'ų info, paverstų į vieną failą ir padarytų saugesniu.
+	Pvz komandos:
+		journalctl --utc
+		journalctl -bandė
+		..
+	formatų pvz:
+		cat
+		export
+		json
+		short
+		verbose
+
+*privalima saugoti įrašus(log'us) 90 dienų*
+
+
+
+	
+	
