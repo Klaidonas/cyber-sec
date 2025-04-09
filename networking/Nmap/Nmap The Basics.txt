@@ -1,14 +1,99 @@
 
-Nmap(Network Mapper) - atviro kodo įrankis naudojamas tinklų radimui ir saugos auditams..
+Nmap(Network Mapper) - atviro kodo įrankis (pagrinde)naudojamas tinklų radimui ir saugos auditams
+
+*TCP iš viso pagal dizainą turi 65535 portus.*
+
+*	NTP - Network Time Protocol
+*	SNMP - Simple Network Management Protocol
+*	VoIP - Voice over IP
+
 
 *-Host Discovery: Who Is Online-*
-	"-sn" - ping option'as, pvz ping scan.
+	"-sn" - dažniausiai naudojamas, kad atrasti "gyvus" hostus be bandymo atrasti kokius services jie vykdo - kad nesukelti "daug garso".
+	"-sL" - naudojama, kad atvaizduotų target'ų sąrašą - kuriuos skanuos(pačio skanavimo nevykdo).
 	pvz komandos:
+	*pvz kaip su ip daryt: jei ip(mano pvz) yra 192.168.1.64, tai į nmap komandas(kaip čia yra dvi žemiau) reikėtū daryt 192.168.1.0/24*
 	nmap -sn 192.168.66.0/24
 	nmap -sL 192.168.0.1/24
-	skanuojant tiesioginį(prie kurio prisijungę) tinklą, galima pažėt prisijungsusių prietaisų MAC adresus;
-	taip pat galima išsiiškinti tinklo plokšrės pardavėjus, kad gali padėti atspėti kokio tipo yra target'as.
-		
+	*abi komandos pretty much dave ta pati rezultata kai patestavau pas save: parode visus įrengius prijungtus
+	prie tinklo(tik nzn ar ntč čia, ar taip yra, bet -sn nerado mano main pc(per lan'a pajungto)*
+	Skanuojant tiesioginį(prie kurio prisijungęs) tinklą, galima pažėt prisijungsusių prietaisų MAC adresus;
+	taip pat galima išsiiškinti tinklo plokštės pardavėjus, kad gali padėti atspėti kokio tipo yra target'as.
 *-Host Discovery: Who Is Online-*
 
 
+*-Port Scanning: Who Is Listening-*
+	Connect Scan:
+		Galima skanuoti tik kažkokius konkrečius protokolus, portus - pvz TCP 80, 443 portus, DNS (UDP/TCP) 53 portas.
+		Paprasčiausias būdas išsiaiškint ar yra TCP portas atviras - bandyti telnet į atvirą port'ą.
+		Kai bandai skanuot su Telnet klientu, reikia bandyti įsteigti TCP ryšį(establish TCP connection) su kiekvienu portu. 
+		Kitais žodžiais - bandyti įsteigti TCP three-way handshake su kiekvienu target'o portu.(tik atviri TCP portai gali respondint'i)
+		"-sT" - bando atlikti tcp three-way handshake'a su kiekienu target'o TCP portu. jei tcp portas yra atidarytas(atviras) ir nmap
+		įsteigia ryšį sėkmingai, nmap nutrauks užmegztą ryšį.
+		pvz komanda : "nmap -sT 10.10.206.0/24"
+		
+	SYN Scan (Stealth):
+		steald modas padaro, kad būtų išsiunčiamas tik vienas(pirmas three way handshake) packetas(SYN), 
+		todėl yra dar mažiau "garso" ir realiai ryšys nei neįsisteigia, todėl sunkiau tokį skanavimą aptikti.
+		kad stealth panaudot, naudojama - "-sS"
+		
+	Scanning UDP Ports:
+		naudojamas kai ne TCP connectionai(retesnis atvejis, nes TCP populiaresnis jau), pvz kai naudojami DNS, DHCP, NTP, SNMP, VoIP protokolai.
+		Nmap siūlo "-sU" UDP services skanavimui.
+		
+	Limiting the Target Ports:
+		Nmap by default skanuoja 1000 populiariausių portų, bet kartais reikia kažko labiau specifinio, todėl galima nurodyti norimus portus:
+			"-F" - fast mode, skanuoja 100 populiariausių port'ų vietoj 1000.
+			"-p[range]" leidžia specifikuoti portų intervalą skanavimui. Pvz: "-p10-1024" skanuoja 
+			portus nuo 10 iki 1024; "-p-25" slanuoja portus nuo 1 iki 25.
+		*YRA FOTKE sito viso apibendrinimo*
+*-Port Scanning: Who Is Listening-*
+
+
+*-Version Detection: Extract More Information-*
+	OS detection:
+		Galima atpažinti OS sistemą su "-O"(padaro ir skanavimą normalų(sS), ir parodo OS). Komandos pvz:
+			nmap -sS -O 192.168.124.211
+			
+	Service and Version Detection:
+		"-sV" naudojamas kai norima sužinoti portai kokių services klauso.
+		"-sV" leidžia aptikti versijas - tai yra patogu renkant daugiau informacijos apie target'ą su nedaug klavišų paspaudimų.
+		komandos pvz: 
+			nmap -sS -sV 192.168.124.211
+		*PASTABA: skanavimas su "-sV" užtrunka gerokai daugiau laiko*
+		
+	Forcing the Scan:
+		kartais target'o host'as gali neatsakyti(neduoti jokio reply), tokiu atveju nmap daugiau 
+		nebeskanuos to porto, kad toišvengt, naudojamas "-Pn" - tai priverčia skanuoti visus portus.
+*-Version Detection: Extract More Information-*
+
+
+*-Timing: How Fast is Fast-*
+	galima nustatyti skanavimo greičius su "-T0"(arba "-T 0") arba "-T paranoid" lėčiausiam skanavimui. Lėčiausias skanavimas: "-T0"  Greičiausias skanavimas: "-T4" 
+	kitas pasirinkimas yra the number of parallel service probes. The number of parallel probes gali būti kontroliuojamas
+	su "--min-paralelism <numprobes>" ir "--max-parallelism <numprobes>" šitie pasirinkimai gali būti naudojami nustatant minimumą 
+	ir maximumą TCP ir UDP portų probes aktyvių tuo pat metu(simultaneously) hosto grupei.
+	pvz komandos: "--min-rate <number>" ir "--max-rate <number>" - tai indikuoja "greičio" kontrolę, kuria nmap sunčia packet'us.
+*-Timing: How Fast is Fast-*
+
+
+*-Output: Controlling What You See-*
+	"-v" - naudojamas, kad matyti skanavima realiu laiku.
+	"vv" - daugiau info
+	"vvvv" - daugiausiai info
+	
+	"-d" - naudojama, debugginimo įgalinimui
+	"d" turi lygius - - max lygis "-d9"
+	
+	Skanavimo raporto saugojimas:
+		pagrindiniai saugojimo formmatai:
+			-oN <filename> - Normal output
+			-oX <filename> - XML output
+			-oG <filename> - grep-able output (useful for grep and awk)
+			-oA <basename> - Output in all major formats
+	
+	komandos pvz: "nmap -sS 192.168.139.1 -oA gateway"
+*-Output: Controlling What You See-*
+
+
+(YRA FOTO - Visko apibendrinimo lentelė)
