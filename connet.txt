@@ -6,3 +6,8 @@ psw> password
 kaip pazet atidarytus portus(ar yra ssh - port 22):
 nmap <target's ip>
 ->
+
+
+opnVPN:
+nusikopint configuration file is https://tryhackme.com/access; 
+įsiklijuot į vm, toj pačioje direkcioje su terminalu "sudo openvpn ConfigFailoPavadinimas.ovpn "

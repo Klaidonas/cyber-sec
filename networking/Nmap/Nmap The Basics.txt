@@ -1,0 +1,14 @@
+
+Nmap(Network Mapper) - atviro kodo įrankis naudojamas tinklų radimui ir saugos auditams..
+
+*-Host Discovery: Who Is Online-*
+	"-sn" - ping option'as, pvz ping scan.
+	pvz komandos:
+	nmap -sn 192.168.66.0/24
+	nmap -sL 192.168.0.1/24
+	skanuojant tiesioginį(prie kurio prisijungę) tinklą, galima pažėt prisijungsusių prietaisų MAC adresus;
+	taip pat galima išsiiškinti tinklo plokšrės pardavėjus, kad gali padėti atspėti kokio tipo yra target'as.
+		
+*-Host Discovery: Who Is Online-*
+
+
