@@ -1,0 +1,8 @@
+IPCONFIG
+
+komandos:
+	ipconfig /displaydns		(daug info parodo(bbz))
+	ipconfig /all				(kad parodytu TCP/IP konfiguracijas)
+	ipconfig /flushdns 			(ištrina DNS resolver cache)
+	ipconfig /registerdns 		(refreshina visus DHCP ir reregistruoja DNS)
+	

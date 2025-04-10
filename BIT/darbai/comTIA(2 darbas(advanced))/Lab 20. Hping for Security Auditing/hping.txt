@@ -1,0 +1,45 @@
+Hping - atviro kodo packet generatorius and analyzavimo įrankis TCP/IP protokolui.
+
+by default hping sukuria TCP packet'ą. Todėl jei ir prietaisas(pvz routeris ar firewall) blokuoja 
+ping request'us, vis tiek galime įvykdyti host'ų atradimą(skanavimą) ir žvalgybą su hping.
+
+"hping3 scanme.nmap.org -p 80 -S -c 5": 
+	skanavimas vykdomas su SYN vėliava. Tai išsiųs tuos pačius packet'us kaip nmap su -sS skanavimu.
+	"-p 80" - nurodoma, kad pažiūrėtų ar 80'tas port'as atviras(atidarytas;
+	"-c 5" - pasako, kad skanavimas bus pakartotas 5 kartus
+	rezultatas: jei "flags=SA" - port'as atidarytas, jei"flags=RA" - port'as uždarytas
+	
+"hping3 scanme.nmap.org -8 1-1024 -S" arba "hping3 192.168.1.123 -8 1-1024 -S":
+	skanuoja 1-1000 portus su SYN packet'ais
+	"-8" padaro hping komandą į sweep-scan modą.
+	*sweep scan mode padaro, kad skanuotų dau portų - 1-1024 šiuot atveju
+	
+"hping3 -S 139.162.196.104 -p ++1":
+	detalesnis skanavimas - skanuoja visus portus nuo "-p ++1" 1, po kiekvieno praskanuoto
+	porto sekantis portas būna 1 didesnis(1,2,3,4,5..).
+	
+"hping3 www.google.com -S -p 80 -T --ttl 13 --tr-keep-ttl -n':
+	serveriu ip adresų radimas(šiuo atveju kurie yra po google.com DNS'u).
+	"TTL panaudojom traceroute'e, kad gautume kažkokį Ip adresų apkrovos balansavimą
+	
+hping3 galim naudoti kaip paprastą ping'inimo tool'ą - "-1" nurodo, kad tai bus ICMP package'as.
+
+"hping3 scanme.nmap.org -1 --traceroute -n":
+	Traceroute to a target using ICMP mode and show verbose.
+	
+Traceroute naudojas ping'us, kad nustatytų serverių, firewall'ų, routerių lokacijas.
+Dėl to daugumas firewall'ų neatsako į ping'ų packetus.
+Hping daro tą patį dalyką, bet gali taip pat naudoti TCP packetus vietoj ICMP, kuriuos firewall'ai
+jau praleis(kitu atveju tai(firewall'as cj) neleistų interneto srauto)
+Šito viso pabandymas:
+"hping3 scanme.nmap.org -n -S -s 8080 -p 80 --traceroute":
+	nustatomas 80 port'as, nustatoma, kad lokalus srautas būtų generuojamas iš port'o 8080.
+	
+hping gali būt naudojamas, kad pasakytų kiek laiko serveris jau veikia. Tai gera informacijam, kad pvz žinoti kada
+paskutini sykį galimai įvyko serverio patch'a/update'ai - kai tai padaro, reikia restartuoti serverius,tai 
+jei pvz matom, kad serveris veikia jau 5 metus - nebuvo updeitinami/patchinami, tdl cj turės pažeidžiamumų.
+bandymas:
+	"hping3 scanme.nmap.org -p 80 --tcp-timestamp -S -c 4"
+
+SYN flood ataka:
+	"hping3 scanme.nmap.org -S --flood -p 80"

@@ -1,0 +1,8 @@
+usermod - naudojamas userio pridėjimui į grupę. PVZ: 
+	"usermod -a G root zidrune"
+	
+"chmod 777" - pridedamos visos teisės (visims - U,G,O)
+
+"groups <user'is>" - parodo kokiom grupem useris pridetas
+
+userio pakeitimas: "su <user'is>", greitasis budas pasikeist i root: "su -"
