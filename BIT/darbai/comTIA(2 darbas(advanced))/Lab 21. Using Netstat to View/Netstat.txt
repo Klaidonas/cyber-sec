@@ -1,0 +1,48 @@
+NETSTAT
+
+netstat - trumpai tariant parodo visus tinklo connectionus.
+Pilna sąvoka:
+"Netstat is a command line tool which let’s you print network connections,
+routing tables, interface statistics, masquerade connections, and multicast
+memberships."
+
+"netstat -n" - parodo vietoj http ar https porto numerius prie "Foreign Address", kitu pakitimu nepamačiau.
+
+kad rodytų tik TCP connectionus: "netstat -t"
+
+kad rodytų tik UDP connectionus: "netstat -u"
+
+galima parametrus ir maišyti, pvz: "netstat -nt"
+
+neaiškesni "STATE" statusai iš netstat lentelių:
+	FIN-WAIT-1: represents waiting for a connection termination request
+	from the remote TCP, or an acknowledgment of the connection
+	termination request previously sent.
+	
+	FIN-WAIT-2: represents waiting for a connection termination request
+	from the remote TCP.
+	
+	CLOSE-WAIT: represents waiting for a connection termination
+	request from the local user.
+	
+	CLOSING: represents waiting for a connection termination request
+	acknowledgment from the remote TCP.
+	
+	LAST-ACK: represents waiting for an acknowledgment of the
+	connection termination request previously sent to the remote TCP
+	(which includes an acknowledgment of its connection termination
+	request).
+	
+	TIME-WAIT: represents waiting for enough time to pass to be sure
+	the remote TCP received the acknowledgment of its connection
+	termination request.
+	
+	CLOSED: represents no connection state at all.
+	
+"netstat -ntl": parodo tik connectionus kurie klausosi(listening) - pvz parodys sukurtus/pajungtus apache/python3 http serverius.
+
+"netstat -r": parodo kernel routing'o lentelę. P.S. labai panašus rezultatas būtų ir su "-e" vietoj "-r".
+
+"netstat -tunp": parodo procesų IDs ir kur jie priklauso. su "e" duoda daugiau detalių: "netstat -tunpe"
+
+"netstat -s": parodo aukšto lygio statistikas

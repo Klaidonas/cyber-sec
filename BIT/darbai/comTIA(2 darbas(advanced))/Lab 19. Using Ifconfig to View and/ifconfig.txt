@@ -1,1 +1,7 @@
-galima pazet info apie konkretu interface(pvz eth0): "ifconfig eth0"
+IFCONFIG
+
+galima pazet info apie konkretu tinklo interface'a(pvz eth0): "ifconfig eth0"
+galima išjungti/įjungti interface su "down"/"up" - pvz: "ifconfig eth0 down"
+kad displėjintų trumpą sąrašą išvesties(display a short list output), galima naudot "-s"
+*Promiscuous Mode - padaro, kad gaudytų ne tik savo interface'ui(pvz eth0) skirtą srautą(packetus), o visą - bšk gal primena monitoring mode.*
+Promiscuous mode įjungimas: "ifconfig eth0 promisc", išjungimas: "ifconfig eth0 -promisc"

@@ -1,0 +1,52 @@
+LOGS
+
+log'ų tipai:
+	Security Logs:
+		Firewall LOGS
+		Auth logs
+		IDS Logs
+	System Logs:
+		Event logs
+	Application Logs:
+		Web server logs
+		database logs
+	Network logs:
+		Switch logs
+		Router Logs
+		Syslog
+		
+SIEM - security information and event management
+
+vienas populiariausių SIEM'ų(ypač nemokamų) - wazuh. Panašus yra SecurityOnion(senesnis, bet daugiau funkcionalumų - už tai ir daugiau resursų reikalauja)
+
+
+kas yr EDR/XDR/SIEM?
+	Kas atsitiko?
+		Kur tai prasidėjo?
+		Kada tai prasidėjo?
+		Ar suvaldyta grėsmė?
+		Kaip apsisaugoti ateityje?
+		
+
+
+SIEM'as yra brangesnis uz XDR, bet SIEM daugiau dalykų stebi,
+
+
+
+
+LEGAL ASPECTS OF CYBER SECURITY
+
+
+kibernetinių atakų taikiniai gali būti:
+	patys taikiniai
+	storage'ai - pvz įsilaužus į įmonę, naudojami jos serveriai, resursai darant atakas(arba kaip tarpininkas)
+	komunikacinii tinklai: pvz pardavinėti nelegalius daiktus, skleisti disinformaciją..
+	
+Property types(pagal US legal system):
+	realiu
+	personal
+	intellectual
+
+DRM - digital rights management
+
+**jei pasisamde SOC ar ESET ir turiu SIEM, ar nuo realiu laiku vykdomos atakos butu apsaugoma imone ar ne?**
