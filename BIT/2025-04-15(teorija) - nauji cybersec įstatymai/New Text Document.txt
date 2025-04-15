@@ -1,0 +1,127 @@
+Į GDPR įeina betkokia/visa informacija susijusi su identifikuoti ar identifikuojančiu individu.
+
+TIS2(NIS2) - antroji ES tinklų ir informacinių sistemų saugumo direktyva
+NIS2 - the second network and normation security directive
+
+antroji tinklų ir informacinių sistemų saugumo direktyva:
+	Kritinės svarbos sektoriai:
+		Energetika, 
+		Transportas,
+		Bankų paslaugos,
+		Geriamojo vandens tiekėjai,
+		..
+	
+	Svarbūs sektoriai:
+		Pašto ir kurjerių paslaugos,
+		Atliekų tvarkymas,
+		Gamyba(elektronikos ir kt.),
+		Skaitmeninių paslaugų tiekimas,
+		..
+		
+Ar įmonei bus taikoma TIS2?
+	Taikoma esminiui subjektui, jei
+		Įmonėje 250+ darbuotojų;
+		Metinės pajamos 50m+;
+		Balanse nurodyto turto vertė 43m+
+		...
+	Svarbiam subjektui, jei:
+		Įmonėje 50+ darbuotojų;
+		metinės pajamos 10m+
+	..
+	Taikoma IŠIMTIS, jei:
+		Įmonė valdo kritinę infrastruktūrą,
+		vienintelis paslaugos tiekėjas.
+
+		
+Tis2/Nis2 Sankcijos:
+	nesilaikant jų, jei įvyksta įsilaužimas - baudos nemažesnės 10 000 000e ar 2% praėjusių metų pasaulinės apyvartos
+	kalbant apie svarbius subjektus: 7 000 000e bauda arba 1.2%
+
+	
+NIS2(TIS2) paskirtis:
+	didinti kibernetinio atsparumo lygį,
+	laiku sureaguoti į incidentus bei juos suvaldyti,
+	pagerinti informacijos mainų saugą tarp įmonės ir trečiūjų šalių,
+	atsižvelgti į kibernetinio saugumo higieną.
+	
+	
+Pagrindiniai TIS2 ramsčiai:
+	ES valstybių atsakomybė;
+	Įmonių atsakomybė;
+	Bendradarbiavimas ir keitimasis informacija
+	
+	
+	
+kas yra NIS2 direktyva ir jos pagrindiniai tikslai. Esminiai skirtumai nuo NIS1 direktyvos:
+	1. Daugiau sektorių 
+	2. Daugiau jmonių 
+	3. Dvi kategorijos subjektų: esminiai ir svarbūs 
+	4. Detalesnės nuostatos dėl pranešimo apie incidentus proceso, pranešimų turinio ir terming 
+	5. Periodinės audito pareigos 
+	6. NIS2 sugriežtina jmonėms taikomus saugumo reikalavimus, nustatydama rizikos valdymo metodą ir minimalų pagrindinių saugumo elementų sąrašą. 
+	7. NIS2 sprendžiami tiekimo grandinių saugumo ir santykių su tiekėjais klausimai, reikalaujant, kad atskiros jmonės spręstų kibernetinio saugumo rizikos klausimus tiekimo grandinėse ir santykiuose su tiekėjais 
+	8. Griežtesnės priežiūros priemonės nacionalinėms institucijoms 
+	9. Griežtesni vykdymo užtikrinimo reikalavimai 
+	10. Siekiama suderinti sankcijq režimus visose valstybėse narėse 
+	11. Didėja baudos 
+	12. Stiprinamas operatyvinis bendradarbiavimas CSIRT  (reagavimo j kompiuterinius saugumo incidentus tarnybq tinklas) tinkle 
+	13. Jsteiqiamas Europos kibernetinių krizių n/šių palaikymo orųanizacijų tinklas  (EU-CyCLONe), siekiant remti koordinuotą didelio masto kibernetinio saugumo incidentq ir kriziq valdymą 
+	14. NIS2 nustatoma pagrindinė sistema su atsakinqais paqrindiniais subjektais dėl koordinuoto pažeidžiamumo  atskleidimo susijusio su naujai nustatyta pažeidžiamumu visoje ES, ir sukuriama viešai žinomq IRT produktq ir IRT paslaugq pažeidžiamumo duomenq bazė, kurią turi valdyti ir prižiūrėti ES kibernetinio saugumo agentūra (ENISA) 
+	15. Stiprinamas Bendradarbiavimo grupės vaidmuo priimant strateginius politikos sprendimus ir stiprinamas valstybiq nariq institucijq keitimasis informacija ir bendradarbiavimas 
+	
+	
+	
+Sektoriai: ypatingos svarbos sektoriai:
+	Sveikata,
+	Energetika,
+	Transportas,
+	Kosmosas,
+	Viešasis sektorius,
+	Vanduo: geriamasis ir nuotekų,
+	IRT paslaugų teikimas
+	
+Itin svabūs sektoriai:
+	pašto kurjerių paslaugos,
+	..
+	
+	
+NIS2 įgyvendinimas:
+	Įstatymas įsigaliojo 2024 spalio 18d.
+	
+KSS registras: galima patikrinti ar patenka įmonė į NIS2
+
+NIS2 įgyvendinimas:
+	nauji reikalavmai saugos įgaliotiniams įsigalioja 2 metai po įstatymo įsigaliojimo
+	
+	
+Auditas:
+	Atitikties dokumentavimas - patvirtinti kibernetinio saugumo rizikos valdymo priemones - aukštesojo lygio vadovybės atsakomybė;
+	Pranešimai apie incidentus;
+	Auditai
+	...
+	
+	KSS auditą privalo atlikti ne rečiau kaip kartą per 3 metusl
+	pagal NKSC patvirtintą metodiką;
+	auditą atlieka:
+		nepriklausomi visuotiniai pripažintų tarptautinių organizacijų sertifikuoti informacinių sistemų saugumo atitikties auditoriai;
+		audito įmonės;
+		kitos institucijos;
+		...
+		
+	
+Technologinės priemonės:
+	1.klientas turi atlikti įmonėje valdomo turto(tech. ir programinės įrangos) inventorizaciją
+	2.Klienta turi centralizuotai valdyti visus įmonės įrenginius bei diegti pažangius saugumo sprendimus
+	3.Klientas turi centralizuotai valdyti naudojamos programinės įrangos pažeidžiamumų patikrą bei užkardyti aptiktas saugumo klaidas ir atnaujinti pasenusias sistemas
+	4.Turi reguliariai analizuoti ir kaupti įvykius iš įmonės įrenginių(pasitelkiant EDR, XDR ar SIEM įrankius), o aptikus grėsmę - operatyviai sureaguoti ir ją užblokuoti.
+	5.Turi aktyvuoti/įdiegti 2FA tiek jungiantis prie informacinių sistemų, tiek per RDP prie serveriu bei įmonės resursų per VPN
+	6.Turi patikrinti kaip yra vykdomos atsarginės duomenų kopijos(būtina užtikrinti veiklos tęstinumą bei duomenų atkūrimą).
+	7.Darbui bei keitimuisi su riboto naudojimo informacija turi taikyti kriptografijos principus bei centralizuotai šifruoti kietuosius diskus.
+	8.(ne pilnai būtinas): Turi riboti ir stebėti prisijungimus prie įmonės resursų iš trečiūjų šalių kompanijų, diegiant privilegijuotos prieigos valdymo sprendimus(PAM*)
+	
+	
+	
+geri linkai:
+
+	https://www.nksc.lt/doc/Tinklu_ir_informaciniu_sistemu_kibernetinio_saugumo_politikos_dokumento_galimas_turinys.pdf
+	https://www.nksc.lt/doc/2024m_NKSC_rekomendacijos_kibernetinio_saugumo_subjektams.pdf
