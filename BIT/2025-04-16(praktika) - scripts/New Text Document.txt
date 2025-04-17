@@ -1,0 +1,62 @@
+kaip pazet koks bashas naudojamas per terminala, komanda: "which bash"
+virsuj skripto failo turi but nurodytas interpretatorius(bash'as), pvz: "#!/usr/bin/bash
+
+masyvo sukurimas:
+	"names=('John', 'Marek', 'Mousey')"
+
+viso masyvo atvaizdavimas:
+	"echo "${names[@]}""
+
+"unset array[i]" - išema masyvo elementa
+
+salygos pvz:
+	"
+	number=5
+
+	if [ "$number" =  5 ]
+	then
+	echo true
+	else
+	echo false
+	fi
+	"
+	P.S. labai svarbūs tarpai; galima naudoti "==" vietoj "="(if'e).
+	
+salygos pvz su inputu:
+	"
+	echo "iveskite koki nors sk."
+	read number
+	if [[ $number -ge  0 ] & [ $number -le 10 ]]
+	***gali but kitokies skliaustu variantai, sitas ne visiem veikia***
+	then
+	echo 'pataikei!'
+	else
+	echo 'Neatspejai, bandyk dar karta'
+	fi
+	"
+
+** gali bvk visur but 1x = ar 1x & ir gali buti 2x - == ar &&
+
+darbo su failais+conditions pvz:
+	"
+	echo "Parasykita failo pavadinima:"
+
+	read kintamasis
+
+	if [ -f $kindamasis ] && [ -w $kintamasis ]
+	then
+	echo Yes > $kintamasis
+	else
+	echo Not_Yes > $kintamasis
+	fi
+	"
+
+
+***
+    ==: "-eq"
+    !=: "-ne"
+    <: "-lt"
+    <=: "-le"
+	>=: "-ge"
+    >: "-gt"
+***

@@ -1,0 +1,79 @@
+galima su python skaiciuoti, tsg parasius 'python' terminale, pvz:
+	"
+	└─$ python
+	Python 3.13.2 (main, Mar 13 2025, 14:29:07) [GCC 14.2.0] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> x=10
+	>>> y=55
+	>>> sandauga=x*y
+	>>> print (sandauga)
+	550
+	>>> 
+	"
+
+pazymet python interpretatoriu(kad nereiktu pries skripta laiediant 'python3' rasinet:
+	#!/usr/bin/python
+pvz skripto eiltu python skripte:
+	"print("Hello")"
+	
+pvz su inputu:
+	"
+	!/usr/bin/python
+	print("Hello")
+	kint = input("Iveskite Nr")
+	print ("Jusu sk.: ", kint)
+	"
+
+pvz su conditionu:
+	"
+	#!/usr/bin/python
+	print("Hello")
+	kint = int(input("Iveskite Nr"))
+	if kint <= 7:
+			print ("Jusu sk maziau arba lygu nei 7: ")
+	else:
+			print ("Jusu sk daugiau nei 7")
+	"
+
+pvz su funkcija su inputu:
+	"
+	#!/usr/bin/python
+
+	print("HELLO")
+
+	Sk=int(input("Iveskita sk"))
+	def calculation(nr):
+	  if nr < 5:
+		print(nr,  " yra maziau nei 5")
+		print("......")
+	  elif nr >= 5:
+		print(nr, " yra daugiau arba lygu")
+	  else:    
+		print("Error")
+	  return
+
+	calculation(Sk)
+	"
+	
+pvz su funkcija be inputo:
+	"
+	#!/usr/bin/python
+
+	print("HELLO")
+
+	def calculation(nr):
+	  if nr < 5:
+		print(nr,  " yra maziau nei 5")
+		print("......")
+	  elif nr >= 5:
+		print(nr, " yra daugiau arba lygu")
+	  else:    
+		print("Error")
+	  return
+
+	calculation(5)
+	calculation(8)
+	calculation(3)
+	"
+
+***P.S. svarbu kad if'u veiksmai butu patabinti po if'ais(kaip ir cikluose)***

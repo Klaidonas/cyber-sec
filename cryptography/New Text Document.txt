@@ -1,0 +1,14 @@
+PCI DSS (Payment Card Industry Digital Security Standard)- informacijos saugumo standartas 
+administruotas mokėjimų kortelių industrijos.
+Panašus standartas teikiamas ir medicinos industrijom valdant medicininius įrašus, bet ten 
+įeina jau ir HIPAA (Health Information Portability and Accountability Act)
+
+
+šifravimo principas:
+	iš siuntėjo pusės:
+		Siuntėjo siunčiama info(Plaintext) užšifruojama su raktu į Ciphertext.
+	iš gavėjo pusės:
+		Ciphertext dekriptuojamas su raktu į plaintext
+	(YRA FOTO)
+
+Chpertext - neperskaitomas, cipher algoritmo užšifruota informacija.
