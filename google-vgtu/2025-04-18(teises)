@@ -1,0 +1,253 @@
+2025-04-18 Teises/Istatymai
+teises rusys(2)
+Civiline teise:
+    * susije su santykiais tarp asmenu ir oragnizaciju
+    * leidzia asmenims reikalauti žalos atlyginimo patyrus asmeninę, fizinė ar finansinę žalą
+
+Baudžiamoji teisė
+    * nagrineja visuomenei zalingus pazeidimus
+    * ..
+
+Administracine teise
+* reglamentuoja administraciniu istaigu steigima ir veikla
+
+
+teises rusys(1):
+    * privacioji teise
+    * viesoji teise
+
+
+
+
+konfidencialumo praradimas
+
+pazeidziamos:
+    * property rights,
+    * intellectual property rights,
+    * privacy rights,
+    * other harms
+
+
+Prieinamumo pazeidimas:
+    kompromisuojant informacijos prieinamuma gali violate'inti
+        freedom of information
+        free speech
+
+Integralumo pazeidimas
+    breaches of computer security may even cause grave harms like injury and death
+    gali nuvest iki mirties pvz atvejais kai nulauziamos medicinines istaigos
+
+
+
+PRINCIPAI
+    nediskriminavimas - negalima diskreminuot vienu ar kitu technologiju(pvz uzdraust naudot linux OS),
+    cyber sec rizikos valdymas - cyber sec turi but paremtas rizikos valdymu - priemones priimama atsizvelgiant i rizika
+    cyber sec proporcingumas - pns kaip valdymas
+    viesojo intereso virsenybe - viesasis interesas svarbiau uz asmenini interesa
+    standartizavimas ir tech ologinis neutralumas - pns kai nediskriminavimas - kur galim, darom standartizuotai
+    subsidiarumas(atsakomybe) - pvz vadovas gali but nusalinamas jei nesilaiko cyber sec istatymu(nors ir privaciam sektoriuje)
+
+principai yra taikomi kai:
+..
+
+
+cyber sec Lietuvoje
+    cyber sec istatymus formuoja: krasto apsaugos ministerija
+    cyber sec istatymus leidzia: seimas
+    cyber sec istatymu igyvendinina, to stebejima vykdo: NKSC
+    kibernetiniu nusikaltimu sritis: Policij
+    KVTC - saugus duomenu perdavimas tinklais
+    VDAI(valstybine duomenu apsaugos inspekcija) - BDAR igyvendinimas
+
+
+Kibernetinio saugumo taryba - yra kaip patariamasis organas(ikurtas 2015), kuris veikia krasto apsaugos ministerijoje
+
+Cyber security regulation in EU:
+    NIS, NIS2;
+    EU Cyber resilience act
+    EU Artificial Intelligence Act
+    Network Code on cyber security(NCCS)
+    EU DORA(for financial)
+    EU GDDPR(2018)
+
+
+
+Pagrindiniai teises aktai:
+    BDAR:
+        bendrasis duomenu apsaugos reglamentas;
+        taikomas nuo 2018095025;
+        tiesioginio taikymo;
+        baudos JA: iki 20mln / 4% metines apyvartos: 
+            20mln nera max - jei apyvarta didesne, imami %
+        *Valstybine duomenu apsaugos inspekcija
+
+    TIS2(TIS2):
+        direktyva del priemoniu aukstam bendram kibernetinio saugumo lygiui visoje ES uztikrinti
+        netiesioginio taikymo - perkeltas i LR kibernetinio saugumo istatyma + lydimuosius teises aktus
+        taikomas nuo 2024-10-18
+        Baudos JA: iki 10mln / 2%
+        tiesioginio vadovo atsokomybe:iki 6000e/nusalinimas/veiklos ribojimas
+        *NKSC
+
+    DORA:
+        Skaitmenines veiklos atsparumo finansu sektoriuje reglamentas(ES)
+        Tiesioginio taikymo
+        Taikomas nuo 2025-01-17
+        *LT bankas
+
+Kam taikoma:
+    BDAR: visiems, kurie tvarko ES esanciu asmenu duomenis
+
+    TIS2: 
+        svarbiems ir esminiams subjektams
+        netiesiogiai taikomas KSS
+
+    DORA: 
+        20 skirtingu tipu finansu sektoriaus subjektams
+        praktiskai beveik visoms lietuvoje veikiancioms finansu paslaugas teikianciomis organizacijoms
+        netiesiogiai taip pat taikomas finansu rinkos dalyviams
+
+
+NUO KADA TAIKOMA?
+    BDAR:
+        nuo 2018
+    TIS:
+        nuo 2024-10-18
+
+    DOR:
+        nuo 2025-01-17
+
+
+RIZIKOS valdymo reikalavimai:
+    BDAR:
+        bdar 24 ir 32 str. ipareigoja visais atvejais atlikti rizikos vertinima
+
+    TIS2:
+        turi buti patvirtinta kibernetinio saugumo rizikos analizes...
+        rizikos vertinimai atliekami ne reciau kaip karta per metus
+        rizikos vertinimo ataskaita ir trukumu salinimo planas teikiami NKSc
+
+    DORA
+        ...
+        perziurima karta per metus
+        IRT rizikos valdymo sistemai taikomas vidaus auditas(DORA6(6))
+
+
+
+INCIDENTU VALDYMAS IR PRANSEISMAS
+
+    BDAR:
+        privaloma pranesti.
+        per 72h, pranesama VDAI,
+        jei didelis pavojus - nedelsiant pranesti duomenu subjekams
+
+    TIS2:
+        privaloma pranseti.
+        terminai:
+            dideli - 24h - pirminis pranesimas,
+            per 72h - issamus pranesimas apie ivykusi incidenta
+            1men - galutinis pranesimas / ataskaita
+        pranesa organizacijos SOC
+        privaloma idiegti automatizuota pranesimu kanala i nksc sistema "KSIS"(dar nera atrd)
+
+    DORA:
+        terminai:
+            4-24h - pirminis pranesimas
+            72h - issamus pranesimas
+            1men - galutinis pranesimas
+
+Tiekimo grandines prieziura
+    BDAR
+    
+
+
+
+
+
+
+
+SAVOKOS
+
+specialiuju kategoriju asmens duomenys:
+    rasine ar etine kilme, politines paziuros, religiniai ar filosofiniai istikinimai, naryste profesinese sajungose
+    genetiniai duomenys
+    sveikatos duomenys
+
+Siuos duomenis tvarkyti draudziama, nebent yra isimtis, pvz:
+    ds aiskus sutikimas
+    ...
+
+
+Duomenu subjektas - DS
+Duomenu valdytojas - DV
+
+
+
+i duomenu tvarkyma ieina viskas: ju irasymas, ju redagavimas...
+
+
+AD tvarkymo principai
+    teisetumo, saziningumo ir skaidrumo principas;
+    tikslo apribojimo principas
+        Ad tvarkomi aiskiais..
+    duomenu kiekio mazinimo principas
+
+    tikslumo principas
+        ad turi buti tikslus, prireikus atnaujinti
+
+principai(2)
+
+saugojimo trukmes apribojimo principas
+    ne ilgiau, nei butina tais tikslais, kuriais AD tvarkomi
+vientisumo ir konfidencialumo principas
+    taikomos technines ar organizanices priemones utikrina AD saugumas
+atskaitomybes principas
+    DV yra atskaingas uz tai, kad butu laikomasi siu principu ir turi sugebeti tai irodyti.
+
+
+
+
+
+DUOMENŲ SUBJEKTO TEISĖS
+    teise susipažinti su savo duomenimis:
+        informacija
+        is kur atejo
+        kokiais tikslais tvarkoma
+        ...
+    teisė "būti pamirštam" - reikalauti ištrinti
+    teisė apriboti duomenų tvarkymą, pvz:
+        kai neteisingi duomenys
+    teisė nesutikti su duomenų tvarkymu
+    teisė į duomenų perkeliamumą, pvz:
+        keičiant banką, kad išliktų tie patys sąskaitų nr,
+        keičiant banką, kad liktų tie patys automatiniai mokėjimai,
+        keičiant tl. nr.,
+        ...
+    teisė pateikti skundą VDAI
+
+
+
+kibernetinio saugumo įstatymas ir TIS2(NIS2)
+
+
+//igaliotos nacionalines institucijos:
+
+NIS2 esminiu ir svarbiu subjektu atsakomybe
+
+NIS2 organizacijoms:
+    informacijos saugos riziku analize;
+    incidentu aptikimas ir valdymas;
+    veiklos testinumas, atstatymas ir kriziu valdymas;
+    tiekimo grandines saugumas;
+    informaciniu sistemu gyvavimo ciklo saugumas;
+    kibernetinio saugumo efektyvumo vertinimas;
+    kibernetine higiena ir mokymai;
+    kriptografija ir sifravimas;
+    zmogiskuju istekliu saugumas, prieigu valdymas, turto valdymas;
+    2FA, stipri autentifikacija.
+
+
+
+
+DUOMENU SUBJEKTU TEISES
+
