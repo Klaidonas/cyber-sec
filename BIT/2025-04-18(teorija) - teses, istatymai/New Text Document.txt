@@ -1,0 +1,12 @@
+defense in depth:
+	policies, procedures & awareness;
+	Physical;
+	Network;
+	Computer;
+	Application;
+	Device
+	
+	top 3 social engineering tactics:
+		pretexting
+		fake websites and pop-ups
+		hoax
