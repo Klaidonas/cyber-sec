@@ -1,14 +1,108 @@
-PCI DSS (Payment Card Industry Digital Security Standard)- informacijos saugumo standartas 
-administruotas mokėjimų kortelių industrijos.
-Panašus standartas teikiamas ir medicinos industrijom valdant medicininius įrašus, bet ten 
-įeina jau ir HIPAA (Health Information Portability and Accountability Act)
+V----------Cryptography Basics--------------V
+
+	PCI DSS (Payment Card Industry Digital Security Standard)- informacijos saugumo standartas administruojamas mokėjimų kortelių industrijų tarybos.
+	Panašus standartas teikiamas ir medicinos industrijom valdant medicininius įrašus, bet ten  įeina jau ir HIPAA (Health Information Portability and Accountability Act)
 
 
-šifravimo principas:
-	iš siuntėjo pusės:
-		Siuntėjo siunčiama info(Plaintext) užšifruojama su raktu į Ciphertext.
-	iš gavėjo pusės:
-		Ciphertext dekriptuojamas su raktu į plaintext
-	(YRA FOTO)
+	šifravimo principas:
+		iš siuntėjo pusės:
+			Siuntėjo siunčiama info(Plaintext) užšifruojama su raktu į Ciphertext.
+		iš gavėjo pusės:
+			Ciphertext dekriptuojamas su raktu į plaintext
+		(YRA FOTO)
 
-Chpertext - neperskaitomas, cipher algoritmo užšifruota informacija.
+	Cipher - algoritmas arba metodas paversti paprastą tekstą į šifruotą(cipher) tekstą ir atgal
+	Ciphertext - neperskaitoma, cipher algoritmo užšifruota informacija.
+	Key - bitų eilutė, kurią naudoja cipher, kad užšifruotų duomenis.
+
+	Caesar Cipher dešifratorius(decrypt'eris) su js(YRA IR FOTO):
+	  const decrypt = () => {
+		if(cipherText!=='') {
+		  console.log('cipherText: ' + cipherText);
+		  const raides = cipherText.split(""); // Splits into individual characters
+		  console.log(raides);  
+
+		  let index = 1;
+		  while(index<=25) {
+			let decryptedLetters = ''
+			for(let i = 0; i<raides.length; i++) {
+			  //console.log('raides[i]: ' + raides[i]);
+			  
+			  for(let j = 0; j<alphabet.length; j++) {
+				//console.log('alphabet[j]: ' + alphabet[j]);
+				if(raides[i]===" ") {
+				  decryptedLetters += " ";
+				  break;
+				}
+				else if(raides[i].toLocaleLowerCase()===alphabet[j].toLocaleLowerCase()) {
+				  // console.log('raides[i]===alphabet[j]');
+				  // console.log(raides[i] + ' === ' + alphabet[j]);
+				  
+				  if(j-index<0) {
+					let skirt = (j-index)*(-1);
+					const rAlphabet = [...alphabet].reverse();  //priskaitant tsg alphabet.reverse() - pakeicia pati alphabet - hz kdl, kad ir jis yra const
+					let actualLetter = rAlphabet[skirt-1];
+					decryptedLetters += actualLetter;
+				  }
+				  else decryptedLetters += alphabet[j-index];
+				  break;
+				}
+			  }
+			  console.log('alphabet: ');
+			  console.log(alphabet);
+			  
+			}
+			if(decryptedLetters!=='')setPlainText((current:string[])=>[...current, decryptedLetters]);
+			index++;
+		  }
+		}
+		else alert('enter cipher text')
+	  }
+	  
+	  
+	kiti populiarūs istoriniai šifravimai:
+		The Vigenère cipher from the 16th century
+		The Enigma machine from World War II
+		The one-time pad from the Cold War
+
+
+	*-Types of Encryption-*
+		Symmetric Encryption:
+			Symetrioc encryption/symetric cryprography - kai šifravimui yra naudojamas privatys raktas(private key).
+			
+			simetrinio šifravimo(symmetric encryption) pvz: DES (Data Encryption Standard), 3DES (Triple DES) and AES (Advanced Encryption Standard):
+				DES - pradėtas naudoti 1977m, naudoha 56 bitų raktą. 1999m per 24h DES raktas buvo sėkmingai nulaužtas, motivavo "shiftint" į 3DES
+				3DES - taikomas 3 kartus. Rakto dydis 168 bitai, nors efektyvi apsauga yra 112 bitų. 3DES buvo pradėtas naudot kai DES buvo jau nebesaugu, 3DES
+				buvo jau pasenęs 2019m ir jį pakeist buvo nuspręsta į AES, bet iki dabar kai kuriose snose sistemose galima rasti 3DES.
+				AES - buvo priimtas kaip standartas 2001m. Jo raktas gali būti 128, 192 arba 256 bitų.
+
+		Asymmetric Encryption:
+			Asymmetric šifravimas jau naudoja pora raktų vietoje vieno - vienas naudojamas užšifravimui, kitas dešifravimui. Išsaugoti konfidencialumui  asymmetric 
+			kriptografija užšifruoja duomenis naudojant viešą raktą(public key), tai gi tai vadinama viešo rakto kriptografija(public key cryptography).
+			
+			pavyzdžiai, kur naudojami 2 raktai šifravimui:
+				 RSA, Diffie-Hellman, and Elliptic Curve cryptography (ECC).
+			RSA - duomenų šifravimo metodas naudojant 2 raktus: 1-ą šifravimui, 2-ą - dešifravimui.
+			
+			prncipas yra toks, kad užšifruoti duomenis galima su public key, dešifruoti - su private key. privatus raktas(private key) turi likti privatus.
+			
+		Asymmetric Encryption'ai įprastai būna lėtesni, nes dažniausiai cipher raktai būna didesnio dydžio, pvz:
+			 RSA naudoja 2048-bit, 3072-bit, and 4096-bit raktus(keys); 2048-bit yra rekomenduojamas minimalus rakto dydis.
+	*-Types of Encryption-*
+	
+	
+	*-Basic Math-*
+		XOR - trumpoji versija “exclusive OR”.
+		XOR - loginė operacija dvejetainėje aritmetikoJe, kuri turi didelę įtaką įvairiose skaičiavimo ir kriptografijos operacijose.
+		In binary, XOR compares two bits and returns 1 if the bits are different and 0 if they are the same, as shown in the truth table below. 
+		This operation is often represented by the symbol ⊕ or ^.
+		(YRA FOTKE)
+		
+		kita dažnai kriptografijoje matoma operacija yra % - liekana. pvz:
+			25%5 = 0 because 25 divided by 5 is 5, with a remainder of 0, i.e., 25 = 5 × 5 + 0
+			23%6 = 5 because 23 divided by 6 is 3, with a remainder of 5, i.e., 23 = 3 × 6 + 5
+			23%7 = 2 because 23 divided by 7 is 3 with a remainder of 2, i.e., 23 = 3 × 7 + 2
+
+	*-Basic Math-*
+	
+^----------Cryptography Basics--------------^
