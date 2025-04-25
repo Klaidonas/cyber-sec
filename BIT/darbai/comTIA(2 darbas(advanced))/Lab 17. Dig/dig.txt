@@ -13,3 +13,8 @@ pvz komandos:
 	dig +x 74.125.193.102			(tas pats, tik kad daro DNS užklausas, bet IP adresams)
 	dig -f domains.txt +short		(padaro užklausas/paieškas ne vienos domeno, o iš failo kiek nori)
 	dig +short TXT hackaday.com		(pasiekiami domeno patvirtinimo duomenys(domain verification data))
+	
+galima naudoti @ pries domena, kad ziuretu serverius ne per mano dns, o butent to DNS(kur po @), pvz komanda: 
+	"dig @84.15.45.178 google.com"
+mano pvz tokiu atveju zymiai daugiau serveriu paroo, nei tsg per mano DNS(be@<IP>)
+	
