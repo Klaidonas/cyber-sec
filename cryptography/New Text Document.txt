@@ -106,3 +106,61 @@ V----------Cryptography Basics--------------V
 	*-Basic Math-*
 	
 ^----------Cryptography Basics--------------^
+
+
+
+V----------Public Key ryptography Basics--------------V
+
+
+    Authentication: You want to be sure you communicate with the right person, not someone else pretending.
+    Authenticity: You can verify that the information comes from the claimed source.
+    Integrity: You must ensure that no one changes the data you exchange.
+    Confidentiality: You want to prevent an unauthorised party from eavesdropping on your conversations.
+
+	GPG - GNU Privacy Guard. It is a free and open-source encryption software that uses public-key cryptography. GPG can be used to encrypt files and messages, and to sign files and messages.
+	
+	
+	Analogijos:
+		Secret Code -	Symmetric Encryption Cipher and Key
+		Lock -			Public Key
+		Lock’s Key -	Private Key
+		
+		
+	
+    p and q - large prime numbers
+    n - the product of p and q
+    The public key is n and e
+    The private key is n and d
+    m is used to represent the original message, i.e., plaintext
+    c represents the encrypted text, i.e., ciphertext
+	
+	n = p × q
+	ϕ(n) = n − p − q + 1
+	
+	
+	SSH - Secure Shell
+	ssh-keygen - programa atsakinga už raktų porų generavimą. Jis palaiko įvairius algoritmus:
+		DSA - Digital Signature Algorithm
+		ECDSA - Elliptic Curve Digital Signature Algorithm
+		ECDSA-SK - ECDSA with Security Key
+		Ed25519 is a public-key signature system using EdDSA - Edwards-curve Digital Signature Algorithm
+		Ed25519-SK - Ed25519 with Security Key
+	
+	pvz komanda sukurt raktų porą:
+		"ssh-keygen -t ed25519"
+	
+	platforma leidžianti webui gauti TLS sertifikatą nemokamai: https://letsencrypt.org/
+
+
+	PGP (Pretty Good Privacy) - programinė įranga, kuri implementuoja šifravimą šifruotiem failam vykdant skaitmeninį pasirašymą(ir daugiau);
+	GPG (GNU Privacy Guard) - nemokamas atviro koo šifravimo įrankis, kuris naudoja viešojo rakto kriptografiją(public-key cryptograph). GPG gali būti 
+	naudojamas: šifruojant (arba/ir pasirašant) failus, žinutes; tikrinant žinučių, laiškų patikimumą(confidentiality, integrity).
+	
+	GPG gali būti naudojamas ir atšifruojant failus CTF'uose.
+	
+	Su GPG,PGP privatūs raktai gali būti apsaugoti su slaptažodžiu, tokiu atveju galima bandyti jį nulaužti/nucrack'inti su "John the Ripper" ir "gpg2john"
+	
+	pvz kaip dešifruot failą/žinutę turint užšifruotos žinutės failą ir raktą:
+		"gpg --import raktas.key"					-		importuojamas raktas
+		"gpg --decrypt confidential_message.gpg"	-		dekriptuojama žinutė su raktu
+^----------Public Key ryptography Basics--------------^
