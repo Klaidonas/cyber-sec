@@ -1,0 +1,4 @@
+"duot pavadinima" - padaryt, kad apacioje terminalo rodytu jo pavadinima, komanda:
+	"tmux new -s http_server"
+pervadint komanda:
+tmux rename-session -t <session_number> http_server
