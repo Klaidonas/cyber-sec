@@ -109,7 +109,7 @@ V----------Cryptography Basics--------------V
 
 
 
-V----------Public Key ryptography Basics--------------V
+V----------Public Key cryptography Basics--------------V
 
 
     Authentication: You want to be sure you communicate with the right person, not someone else pretending.

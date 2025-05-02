@@ -1,0 +1,52 @@
+fundamentiniai kibernetinio saugumo principai
+	1. defense in depth
+		defense in depth: creating multiple layers of security, like an obstacle course for attackers.examples:
+			combining mfa;
+			endpoint detection&response (EDR)
+			firewalls
+			vulnerability testing
+			data encryption
+			
+	2. Least Privilege
+		Least Privilege: grant users only the minimum access rights necessary to perform their job duties.
+		And reducing attack surface by removing unused services(e.g. FTP, SSH if not needed), changing default ID's/passwords.
+		
+	3. Seperation Of Duties
+		Seperation Of Duties: Ensure no single individual complete control over a a critical process. example:
+			the person requesting access or a transaction cannot be the same person who approves it.
+			
+	4. Secure by Design
+		Secure by Design: integrate security considerations from the very beginning of any project. Embed security requirements design,
+		coding, installation, testing and production phases.
+		
+	5. KISS(keep it simple stupid)
+		KISS: security measures should be effective but not overly complex for legitimate users. complexity is the enemy of security.
+		
+		
+	6. Slaptumas !== Saugumas
+
+
+dirbtinis intelektas
+	AI - simulating human intelligence(reasoining, learning, interface) in machines.
+
+	Machine Learning(ML): subfield of AI focused on pattern recognition from data
+	Deep Learning(DL): Subfield of ML using multi-layered neural networks, simulating human brain.
+	DML - deep machine learning
+	
+	
+When AI Gets Creative
+	When AI Gets Creative: The problem of hallucinations.
+		LLM'ai gali generuoti neteisingas ar padirbtas detales:
+			Sentence Contradiction
+			Prompt Contradiction
+			Factual contradiction
+			Random Hallucinations
+			
+		Pagrindinės priežastys:
+			mokymosi limitacijos
+			duomenų užterštumas(contamination)
+			blogi prompt'ai
+		The Nature of LLM's: AI generates output by sampling probabilities of tokens.
+		
+
+Generative artificial intelligence
