@@ -163,4 +163,40 @@ V----------Public Key cryptography Basics--------------V
 	pvz kaip dešifruot failą/žinutę turint užšifruotos žinutės failą ir raktą:
 		"gpg --import raktas.key"					-		importuojamas raktas
 		"gpg --decrypt confidential_message.gpg"	-		dekriptuojama žinutė su raktu
-^----------Public Key ryptography Basics--------------^
+^----------Public Key cryptography Basics--------------^
+
+
+
+V----------Hashing Basics--------------V
+
+	Hash funkcijos !- šifravimui(encryption). Čia nėra rakto ir tai turi būti neįmanoma(arba nepraktiška) eiti iš išvesties atgal į įvestį(go 
+	from the output back to the input)
+	
+	pvz komanda:
+		"hexdump -C failas.txt"
+		(YRA PVZ FOTKE)
+	
+	
+	Hash'o output'as įprastai yra "cieli"(raw) byte'ai, kurie tada yra užkoduojami(encoded).
+	Dažniausi užkodavimai yra "base64" ir "hexadecimal". "md5sum", "sha1sum", "sha256sum" ir "sha512sum" pateikia
+	savo rezultatus šešioliktainiu(hexadecimal) formatu.
+	Hexadecimal formatas atvaizduoja kiekvieną neapdorotą(raw) byte'ą kaip 2 hexadecimal skaitmenis.
+	
+	Kodėl hash'inimas svarbu:
+		Hashing'as padeda apsaugoti duomenų vientisumą bei slaptažodžių konfidencialumą(data’s integrity and ensure password confidentiality);
+		Naudojimo pvz: 
+			serveriai naudoja hashing'a, kad patvirtintų tavo slaptažodį;
+			Laikantis gerosios saugumo praktikos, serveruau nei nenuskaito tavo slaptažodžio, o tik apskaičiuoja jo hash'o reikšmę ir ją patikrina.
+		Hash'inimas apskritai yra daug kur naudojamas, susiduriam su juo dažnai nei nežinodami tuo.
+	
+	
+	Hash Collision - kai dvi skirtingos įvestys(inputs) duoda tą pačią išvestį(output).
+	Hash funkcijos yra sukurtos taip, kad būtų išvengtas toks dalykas k galima geriau
+	Bet kadangi įvesčių skaičius yra praktiškai neliminuotas(unlimited), o išvesčių skaičius yra limituotas(limited), todėl tai priveda prie "pigeonhole effect".
+	
+	PIGEONHOLE EFFECT teigia, jog dalykų skaičius(pigeons) yra didesnis nei konteinerių(pigeonholes) skaičius - kai kuries konteineriai(pigeonholes) turi laikyti po
+	daugiau nei vieną dalyką(pigeon). Kadangi yra daugiau įvesčių nei išvesčių, kai kurios įvestys neišvengiamai turi duoti tą pačia išvestį.
+	
+	MD5 ir SHA1 algoritmai yra buvę užatakuoti, todėl dabar yra pripažinti/svarstomi kaip nesaugūs dėl hash collision'ų. Nors jie yra kažkiek pažeidžiami, kai jie 
+	būna kartu vienu metu,nėra niekados įvykusios sėkmingos atakos prieš juos.
+^----------Hashing Basics--------------^

@@ -1,0 +1,62 @@
+factors of authentication:
+	something you know - pvz username, psw;
+	something you have - pvz a smart id, autentikatoriai(appsai);
+	something you are - pvz pirstu antspaudai, kiti biometriniai duomenys;
+	
+
+Access control principles:
+	dazniausiai yra 1 auščiausiasis administratorius
+	
+Access control Policies:
+	Dictates:
+		what types of access are permitted
+		under what circumstances
+		by whom
+		
+Access Control Requirements:
+	reliable input;
+	support for fine and coarse specifications;
+	least privilege;
+	separation of duty;
+	open and closed policies;
+	policy combinations and conflict rtesolution;
+	administrative policies;
+	dual control
+	
+Protection Domains:
+	user mode;
+	kernel mode
+	
+Access Control List(ACL):
+	modern systems support ACL's;
+	Assigns a list of user IDs and groups;
+	Any number of users and groups can be associated with an object;
+	Read, write, execute protection bits;
+	A file does not need to have an ACL;
+	Usuall includes an additional protection bit that indicates whether the file has an extended ACL.
+	
+ACL usage(2 steps):
+	1: selects the most appropriate ACL(owner, named users, owning/named groups, others;
+	2: checks if the matching entry contains sufficient permissions.
+
+Managing Accounts:
+	consider 'disabled by default' policy;
+	consider 'zero trust' point of view;
+	credential policies and account types:
+		presonnel or end-user accounts;
+		administrator and root accounts;
+		service accounts;
+		device accounts;
+		third-party accounts;
+		guest accounts *turetu iš viso nebūt tokių nebent koks guest wifi acocunt*;
+		shared and generic accounts
+		
+Privileged Access Management(PAM):
+	sometimes called privileged account management;
+	allows an organization to apply more stringent security controls over accounts with elevated privileges;
+	PAM implements the concept of just-in-time administration
+	Administrators don't have administrative privileges until they need them;
+	when they need them, their account sends a request for the elevated privileges;
+	the underlying PAM system grants the request typically by adding the ccount to a group with elevated privileges.
+	*tokios sistemos labai aukšto saugumo, bet retos. pvz kur naudojama: bankai, telekomunikacija*
+
