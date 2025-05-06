@@ -1,0 +1,59 @@
+*DAUG TOS PACIOS INFO KAIP IS PRAEITOS PASKAITOS(05-02)
+
+
+PAM - Privileged Access Management
+components of PAM:
+	shared access password management
+	privileged session management
+	vendor priilgeged access management
+	application access management
+	
+SSO - single sign-on
+
+SSO pvz - prisijungimas so google/gmail emailu
+
+SSO pliusai:
+	paprasciau darbuotojams;
+	saugiau;
+	...
+	
+SSO minusai:
+	gali būti sunku integruoti į aplikaciją;
+	iš tech pusės sunkiau integruoti;
+	jei providerio serveriai išjungti, su tuo provideriu nebus įmanoma prisijungti. 
+	
+SSO tipai:
+	slaptažodžių sinkronizavimas;
+	legacy SSO(employee/enterprise SSO);
+	web access management (WAM);
+	Cross domain (realm) SSOFederated SSO;
+	others and "in-house"
+	
+ar verta imti PAM įmonei priklauso nuo ne vienos aplinkybės:
+	ar jiems iš tikrųjų tas naudinga;
+	kiek papildomo darbo tas reikalaus(ir integravimas, ir pats naudojimasis juo);
+	kiek eurų kainuos tai integruoti;
+	kiek laiko kainuos tai integruoti;
+	...
+
+Įmonės rizikos:
+	Single point of failure 
+		Denial of Service/lack of availability; 
+	Stolen credentials via insecure implementations
+	Overly ambitious projects
+		Physical and network;
+			Complicated procedures — "n-factor authentication";
+			"Square pegs in round holes". 
+	Failure to consider the legacy 
+		OS/390, AS/400, custom client/server applications, RADIUS; 
+	Failure to consider regulatory requirements 
+		Financial services and GLBA; 
+		Health care and HIPAA; 
+		Content providers and COPPA; 
+		International businesses and EU DPD. 
+
+	Authentication Protocols and Technologies
+		Dial-in users and wireless(802.1x)
+			RADIUS
+		S/390
+		...

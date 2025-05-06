@@ -1,0 +1,64 @@
+iš praeitos paskaitos info -------------V
+
+Legacy SSO (ESSO)
+Baisc Web SSO (WAM)
+	WAM - web access management
+Cross Domain SSO
+
+Federated SSO:
+	provides an authentication token to users which is used across federated organizations to access web properties and applications;
+	
+	
+Authentication Methods:
+	passwords;
+	mfa;
+	ssn;
+	behavior biometrics;
+	token authentication;
+	passwordless.
+	
+^------------- iš praeitos paskaitos info
+
+
+SSO technologies:
+	Traditional signle sign-on;
+	Password synchronization;
+	Authentication platforms;
+	Web Logon Aggregators.
+	
+
+PKI - Public Key Infrastructure
+
+Kerberos - SSO technologija, labiausiai windows'uose - su windows active directory
+Radius - pnš kaip Kerberos(irgi tik windows), bet naudojamos jungtis ir prie išorinių(remote) sistemų/resursų
+
+SAML - Security Assertion Markup Language
+
+Comparing Authentication Services:
+	SAML
+		principle
+		identify provider
+		service provider
+		can also be used for authorization
+	SAML and Authorization
+	OAuth
+	OpenID and OpenID Connect
+	
+
+*Jei XML formatu - automatiškai SAML (testuose jei bus)*
+
+OAuth 2.0 - dabartinis OAuth versijos standartas 
+
+OpenID - naudoja JSON (kaip SAML naudoja XML)
+
+OAuth 2.0:
+	webams - internetiniams puslapiams naudojnat pvz google, fb providerius
+	
+OpenID Connect:
+	webinės aplikacijos(rečiau naudojamos) pvz google cloud;
+	
+SAML:
+	vidinėse sistemose/resursuose, pvz darbe
+	
+
+Radius esminis žodis - microsoft

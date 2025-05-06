@@ -1,0 +1,207 @@
+V----------Cryptography Basics--------------V
+
+	PCI DSS (Payment Card Industry Digital Security Standard)- informacijos saugumo standartas administruojamas mokėjimų kortelių industrijų tarybos.
+	Panašus standartas teikiamas ir medicinos industrijom valdant medicininius įrašus, bet ten  įeina jau ir HIPAA (Health Information Portability and Accountability Act)
+
+
+	šifravimo principas:
+		iš siuntėjo pusės:
+			Siuntėjo siunčiama info(Plaintext) užšifruojama su raktu į Ciphertext.
+		iš gavėjo pusės:
+			Ciphertext dekriptuojamas su raktu į plaintext
+		(YRA FOTO)
+
+	Cipher - algoritmas arba metodas paversti paprastą tekstą į šifruotą(cipher) tekstą ir atgal
+	Ciphertext - neperskaitoma, cipher algoritmo užšifruota informacija.
+	Key - bitų eilutė, kurią naudoja cipher, kad užšifruotų duomenis.
+
+	Caesar Cipher dešifratorius(decrypt'eris) su js(YRA IR FOTO):
+	  const decrypt = () => {
+		if(cipherText!=='') {
+		  console.log('cipherText: ' + cipherText);
+		  const raides = cipherText.split(""); // Splits into individual characters
+		  console.log(raides);  
+
+		  let index = 1;
+		  while(index<=25) {
+			let decryptedLetters = ''
+			for(let i = 0; i<raides.length; i++) {
+			  //console.log('raides[i]: ' + raides[i]);
+			  
+			  for(let j = 0; j<alphabet.length; j++) {
+				//console.log('alphabet[j]: ' + alphabet[j]);
+				if(raides[i]===" ") {
+				  decryptedLetters += " ";
+				  break;
+				}
+				else if(raides[i].toLocaleLowerCase()===alphabet[j].toLocaleLowerCase()) {
+				  // console.log('raides[i]===alphabet[j]');
+				  // console.log(raides[i] + ' === ' + alphabet[j]);
+				  
+				  if(j-index<0) {
+					let skirt = (j-index)*(-1);
+					const rAlphabet = [...alphabet].reverse();  //priskaitant tsg alphabet.reverse() - pakeicia pati alphabet - hz kdl, kad ir jis yra const
+					let actualLetter = rAlphabet[skirt-1];
+					decryptedLetters += actualLetter;
+				  }
+				  else decryptedLetters += alphabet[j-index];
+				  break;
+				}
+			  }
+			  console.log('alphabet: ');
+			  console.log(alphabet);
+			  
+			}
+			if(decryptedLetters!=='')setPlainText((current:string[])=>[...current, decryptedLetters]);
+			index++;
+		  }
+		}
+		else alert('enter cipher text')
+	  }
+	  
+	  
+	kiti populiarūs istoriniai šifravimai:
+		The Vigenère cipher from the 16th century
+		The Enigma machine from World War II
+		The one-time pad from the Cold War
+
+
+	*-Types of Encryption-*
+		Symmetric Encryption:
+			Symetrioc encryption/symetric cryprography - kai šifravimui yra naudojamas privatys raktas(private key).
+			
+			simetrinio šifravimo(symmetric encryption) pvz: DES (Data Encryption Standard), 3DES (Triple DES) and AES (Advanced Encryption Standard):
+				DES - pradėtas naudoti 1977m, naudoha 56 bitų raktą. 1999m per 24h DES raktas buvo sėkmingai nulaužtas, motivavo "shiftint" į 3DES
+				3DES - taikomas 3 kartus. Rakto dydis 168 bitai, nors efektyvi apsauga yra 112 bitų. 3DES buvo pradėtas naudot kai DES buvo jau nebesaugu, 3DES
+				buvo jau pasenęs 2019m ir jį pakeist buvo nuspręsta į AES, bet iki dabar kai kuriose snose sistemose galima rasti 3DES.
+				AES - buvo priimtas kaip standartas 2001m. Jo raktas gali būti 128, 192 arba 256 bitų.
+
+		Asymmetric Encryption:
+			Asymmetric šifravimas jau naudoja pora raktų vietoje vieno - vienas naudojamas užšifravimui, kitas dešifravimui. Išsaugoti konfidencialumui  asymmetric 
+			kriptografija užšifruoja duomenis naudojant viešą raktą(public key), tai gi tai vadinama viešo rakto kriptografija(public key cryptography).
+			
+			pavyzdžiai, kur naudojami 2 raktai šifravimui:
+				 RSA, Diffie-Hellman, and Elliptic Curve cryptography (ECC).
+			RSA - duomenų šifravimo metodas naudojant 2 raktus: 1-ą šifravimui, 2-ą - dešifravimui.
+			
+			prncipas yra toks, kad užšifruoti duomenis galima su public key, dešifruoti - su private key. privatus raktas(private key) turi likti privatus.
+			
+		Asymmetric Encryption'ai įprastai būna lėtesni, nes dažniausiai cipher raktai būna didesnio dydžio, pvz:
+			 RSA naudoja 2048-bit, 3072-bit, and 4096-bit raktus(keys); 2048-bit yra rekomenduojamas minimalus rakto dydis.
+	*-Types of Encryption-*
+	
+	
+	*-Basic Math-*
+		XOR - trumpoji versija “exclusive OR”.
+		XOR - loginė operacija dvejetainėje aritmetikoJe, kuri turi didelę įtaką įvairiose skaičiavimo ir kriptografijos operacijose.
+		In binary, XOR compares two bits and returns 1 if the bits are different and 0 if they are the same, as shown in the truth table below. 
+		This operation is often represented by the symbol ⊕ or ^.
+		(YRA FOTKE)
+		
+		kita dažnai kriptografijoje matoma operacija yra % - liekana. pvz:
+			25%5 = 0 because 25 divided by 5 is 5, with a remainder of 0, i.e., 25 = 5 × 5 + 0
+			23%6 = 5 because 23 divided by 6 is 3, with a remainder of 5, i.e., 23 = 3 × 6 + 5
+			23%7 = 2 because 23 divided by 7 is 3 with a remainder of 2, i.e., 23 = 3 × 7 + 2
+
+	*-Basic Math-*
+	
+^----------Cryptography Basics--------------^
+
+
+
+V----------Public Key cryptography Basics--------------V
+
+
+    Authentication: You want to be sure you communicate with the right person, not someone else pretending.
+    Authenticity: You can verify that the information comes from the claimed source.
+    Integrity: You must ensure that no one changes the data you exchange.
+    Confidentiality: You want to prevent an unauthorised party from eavesdropping on your conversations.
+
+	GPG - GNU Privacy Guard. It is a free and open-source encryption software that uses public-key cryptography. GPG can be used to encrypt files and messages, and to sign files and messages.
+	
+	
+	Analogijos:
+		Secret Code -	Symmetric Encryption Cipher and Key
+		Lock -			Public Key
+		Lock’s Key -	Private Key
+		
+		
+	
+    p and q - large prime numbers
+    n - the product of p and q
+    The public key is n and e
+    The private key is n and d
+    m is used to represent the original message, i.e., plaintext
+    c represents the encrypted text, i.e., ciphertext
+	
+	n = p × q
+	ϕ(n) = n − p − q + 1
+	
+	
+	SSH - Secure Shell
+	ssh-keygen - programa atsakinga už raktų porų generavimą. Jis palaiko įvairius algoritmus:
+		DSA - Digital Signature Algorithm
+		ECDSA - Elliptic Curve Digital Signature Algorithm
+		ECDSA-SK - ECDSA with Security Key
+		Ed25519 is a public-key signature system using EdDSA - Edwards-curve Digital Signature Algorithm
+		Ed25519-SK - Ed25519 with Security Key
+	
+	pvz komanda sukurt raktų porą:
+		"ssh-keygen -t ed25519"
+	
+	platforma leidžianti webui gauti TLS sertifikatą nemokamai: https://letsencrypt.org/
+
+
+	PGP (Pretty Good Privacy) - programinė įranga, kuri implementuoja šifravimą šifruotiem failam vykdant skaitmeninį pasirašymą(ir daugiau);
+	GPG (GNU Privacy Guard) - nemokamas atviro koo šifravimo įrankis, kuris naudoja viešojo rakto kriptografiją(public-key cryptograph). GPG gali būti 
+	naudojamas: šifruojant (arba/ir pasirašant) failus, žinutes; tikrinant žinučių, laiškų patikimumą(confidentiality, integrity).
+	
+	GPG gali būti naudojamas ir atšifruojant failus CTF'uose.
+	
+	Su GPG,PGP privatūs raktai gali būti apsaugoti su slaptažodžiu, tokiu atveju galima bandyti jį nulaužti/nucrack'inti su "John the Ripper" ir "gpg2john"
+	
+	pvz kaip dešifruot failą/žinutę turint užšifruotos žinutės failą ir raktą:
+		"gpg --import raktas.key"					-		importuojamas raktas
+		"gpg --decrypt confidential_message.gpg"	-		dekriptuojama žinutė su raktu
+^----------Public Key cryptography Basics--------------^
+
+
+
+V----------Hashing Basics--------------V
+
+	Hash funkcijos !- šifravimui(encryption). Čia nėra rakto ir tai turi būti neįmanoma(arba nepraktiška) eiti iš išvesties atgal į įvestį(go 
+	from the output back to the input)
+	
+	pvz komanda:
+		"hexdump -C failas.txt"
+		(YRA PVZ FOTKE)
+	
+	
+	Hash'o output'as įprastai yra "cieli"(raw) byte'ai, kurie tada yra užkoduojami(encoded).
+	Dažniausi užkodavimai yra "base64" ir "hexadecimal". "md5sum", "sha1sum", "sha256sum" ir "sha512sum" pateikia
+	savo rezultatus šešioliktainiu(hexadecimal) formatu.
+	Hexadecimal formatas atvaizduoja kiekvieną neapdorotą(raw) byte'ą kaip 2 hexadecimal skaitmenis.
+	
+	Kodėl hash'inimas svarbu:
+		Hashing'as padeda apsaugoti duomenų vientisumą bei slaptažodžių konfidencialumą(data’s integrity and ensure password confidentiality);
+		Naudojimo pvz: 
+			serveriai naudoja hashing'a, kad patvirtintų tavo slaptažodį;
+			Laikantis gerosios saugumo praktikos, serveruau nei nenuskaito tavo slaptažodžio, o tik apskaičiuoja jo hash'o reikšmę ir ją patikrina.
+		Hash'inimas apskritai yra daug kur naudojamas, susiduriam su juo dažnai nei nežinodami tuo.
+	
+	
+	Hash Collision - kai dvi skirtingos įvestys(inputs) duoda tą pačią išvestį(output).
+	Hash funkcijos yra sukurtos taip, kad būtų išvengtas toks dalykas k galima geriau
+	Bet kadangi įvesčių skaičius yra praktiškai neliminuotas(unlimited), o išvesčių skaičius yra limituotas(limited), todėl tai priveda prie "pigeonhole effect".
+	
+	visų hash'ų tikimybių skaičiaus formulė = 2^<bit'ų sk>
+	
+	PIGEONHOLE EFFECT teigia, jog dalykų skaičius(pigeons) yra didesnis nei konteinerių(pigeonholes) skaičius - kai kuries konteineriai(pigeonholes) turi laikyti po
+	daugiau nei vieną dalyką(pigeon). Kadangi yra daugiau įvesčių nei išvesčių, kai kurios įvestys neišvengiamai turi duoti tą pačia išvestį.
+	
+	MD5 ir SHA1 algoritmai yra buvę užatakuoti, todėl dabar yra pripažinti/svarstomi kaip nesaugūs dėl hash collision'ų. Nors jie yra kažkiek pažeidžiami, kai jie 
+	būna kartu vienu metu,nėra niekados įvykusios sėkmingos atakos prieš juos.
+	
+	
+	kad parodyt kažkokį kiekį eilučių su cat: "head -n <nr> <failas>
+^----------Hashing Basics--------------^

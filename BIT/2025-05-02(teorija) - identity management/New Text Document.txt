@@ -39,7 +39,7 @@ ACL usage(2 steps):
 	1: selects the most appropriate ACL(owner, named users, owning/named groups, others;
 	2: checks if the matching entry contains sufficient permissions.
 
-Managing Accounts:
+Managing Accounts Best Practices:
 	consider 'disabled by default' policy;
 	consider 'zero trust' point of view;
 	credential policies and account types:
