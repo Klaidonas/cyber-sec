@@ -61,7 +61,7 @@ v----------NETWORKING ESSENTIALS--------------v
 	ir telefonai turi juos is karto(by default))
 
 	DHCP turi 4 žingsnius - "DOGE" (yra fotke)
-	1. DHCP Discove: klientas transliuoja "DHCPDISCOVER" žinutę ieškodamas DHCP serverio.
+	1. DHCP Discover: klientas transliuoja "DHCPDISCOVER" žinutę ieškodamas DHCP serverio.
 	2. DHCP Offer: serveris atsako su "DHCPOFFER" žinute su ip adresu, kuris yra laisvas klientui priimti.
 	3. DHCP Request: klientas atsako su "DHCPREQUEST" žinute, kad nurodytų, kad priemė pasiūlytą ip.
 	4. DHCP Acknowledge: serveris atsako su "DHCPACK" žinute patvirtinant, kad klientui yra priskirtas pasiūlyas ip adresas.

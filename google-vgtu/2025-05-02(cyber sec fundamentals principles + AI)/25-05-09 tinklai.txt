@@ -1,0 +1,41 @@
+tinklo irenginiai
+* hub;
+* bridge
+* switch
+* router
+* modem
+* access point
+
+
+segmentavimo tipai:
+* Fizine segmentacija
+* VLAN
+* potinkliai
+* ugniagiasienes
+* VPN
+* DMZ
+* NAT
+
+Segmentavimo nauda:
+* Aiskesnis monitoringas
+* Isilauzimu aptikimas
+* didesnis nasumas
+
+tinklo saugumo priemones:
+    1. tinklo segmentavimas
+        segmentavimus fiziskai turi atskirti marsrutizatorius
+        tinkla galima segmentuoti fiziskai ir logiskai(su mazgais)
+    *marsrutizatoriaus tikslas: sujungti tinklus*
+
+    2. ugniasiene - praleidzia arba ne srauta i tinkla
+
+    ACL - access control list
+
+    3. IDS/IPS - intrusion detection/prevention system
+
+    HIDS - host intrusion detection system
+    NIDS - network intrusion detection system
+
+
+nustatyti tinklo plokstes gamintoja
+https://macvendors.com/ (uni pc gamintojas: DELL)

@@ -1,0 +1,25 @@
+jei imoneje yra integruotas maziau zinomas, patikimas chat botas(AI), atakuotojai gali bandyti juos priversti daryti neleistinus veiksmus 
+naudojant socialine inzinerija - pvz.: priversti bota parduoti tau produkta uz 1e vietoj 500
+
+Six Major AI Attack Classes
+Embedded AI
+LLMjacking
+
+Embedded/edge computing - irenginiai, kurie naudoja mikro kompiuterius
+
+prompt injection - tricking the AI through instructions (apgauti AI modeli naudojant socialine inzinerija)
+infection - compromising the AI system with malware
+Evasion - Modifying inputs to fool the AI (socialine inzinerija naudojantis apeit ethical guidelines)
+Poisoning - corrupting the AI's training data (pvz, uznuodyt, kad prie kazkokio prompto bloga outputa duotu - pvz pasakius tam tikra fraze kad padarytu 10x pigesni produkta)
+Extraction - Stealing data or models from the AI (informacijos istraukimas is ai modelio - pvz asmenine, jautri informacija)
+Denial of service - Overwhelming the AI system
+
+kitas Evasion pvz: ant stop zenklo uzklijuotas nedidelis lipdukas, kurio zmones nei nepamatys/neatkreips demesio, o masinos su kamerom tai gali pamatyti vietoj stop zenklo greicio limita - masina apgaunama, atsiranda didele saugumo spraga.
+
+UZDUOTIS:
+sugalvoti klausima, kad sistema duotu ats json formatu
+
+
+LLM paleidimas lokaliai:
+https://colab.research.google.com/drive/1UTx7FLgaOJ48JbzC0e8Lkj1hO6i85TtT?usp=sharing#scrollTo=acZ3tS3uSwnd
+
