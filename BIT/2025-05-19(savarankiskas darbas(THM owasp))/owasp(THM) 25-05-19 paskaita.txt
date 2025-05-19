@@ -1,0 +1,31 @@
+DAC (Discretionary Access Control):
+	kai resursų savininkas arba administratorius nuspredžia kas turi prieigą prie resursų ir kokius veiksmus jie gali daryti
+
+MAC (Mandatory Access Control):
+	kai prieiga prie resursų yra nustatoma pagal jau nustatytą taisyklių/politikų rinkinį.
+
+RBAC (Role-Based Access Control):
+	kai vartotojams yra pritaikoma rolė organizacijoje ir pagal ją yra jiems suteikiama prieiga prie resursų.
+
+ABAC (Attribute-Based Access Control):
+	kai prieiga prie resursų yra nustatoma pagal atributų rinkinį - pvz.: vartotojo rolė, dienos laikas, fizinė vieta, įrenginys.
+
+ (Insecure direct object references):
+	
+	
+	
+Broken Acces Control:
+	Brokuotos prieigos kontrolės pažeidžiamumai reiškia situacijas, kur prieigos kontrolės mechanizmams nepavyksta
+	įgyvendinti tinkamus apribojimus vartotojų prieigai prie resursų.
+
+Populiarūs exploits brokuotai prieigos kontrolei:
+	1. Horizontal privilege escalation - kai atakuotojas gali pasiekti resursus priklausančius kitiem vartotojam su tokiu pat prieinamumo lygiu.
+	2. Vertical privilege escalation - kai atakuotojas gali pasiekti resursus, priklausančius kitiem aukštesnio lygio prieinamumo vartotojam.
+	3. Insufficient access control checks - kai prieigos kontrolės patikrinimai nėra atliekami teisingai arba nuolatos, tokiu būdu leisdami 
+		atakuotojui juos praeiti. Pvz aplikacija gali leisti vartotojam matyti jautrią info be verifikacijos su jų tinkamais leidimais.
+	4. IDOR(Insecure direct object references) - pasitaiko kai atakuotojas gali gauti prieigą prie resursų ar duomenų išnaudojant aplikacijos 
+		prieigos kontrolės mechanizmų silpnybes
+	
+
+
+(YRA SITA VISA INFO IR PRIE "pentesting/owasp")

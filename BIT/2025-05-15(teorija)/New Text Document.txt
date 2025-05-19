@@ -1,0 +1,105 @@
+OWASP:
+	1. Broken Access Control
+	2. Cryptographic failures
+	3. Injection
+	4. Insecure Design
+	5. Security Misconfiguration
+	6. Vulnerable and Outdated Components
+	7. Identification and Authentication Failures
+	8. Software and Data Integrity Failures
+	9. Security Logging & Monitoring Failures
+	10. Server-Side Request Forgery (SSRF)
+	
+	
+IPv4 vs IPv6
+
+IPv4:
+	deployed: 1981
+	IP address 32-bit IP address
+	4.3 billion addresses
+	Addresses must be reused and masked
+	Numeric dot-decimal notation
+	...
+	DHCP or manual configuration
+	
+IPv6:
+	deployed: 1998
+	IP address 128-bit address
+	7.9x10^28 addresses
+	Everydevice can have a unique address
+	Alphanumeric hexadecimal notation
+	...
+	Supports autoconfiguration
+	
+	
+IP tipai:
+	Public;
+	Private;
+	Static(dažniausiai įmonės išsiperka);
+	Dynamic;
+	
+IPv4 - 32 bit'ų
+
+
+Addressing methods:
+	Unicast: iš vieno kompiuterio į kitą kompiuterį (į vieną įrenginį) pvz kai svarbią info siunčia tik į vieną pusę - atsakymo nei nepriimtų;
+	Broadcast: populiariausias metodas - iš 1 įrenginio keliauja į visus įrenginius. Pvz kompiureriai - kad ir mano pc - kai priimame iš kažkur duomenis,(pvz microsoft);
+	Multicast: į grupę srautas (į daug įrenginių). Pnš kaip broadcast;
+	Anycast: pasirinktinai - gali iš tavęs siųstis, gali tu iš kažko siųstis (pvz netlfixas; torrentu psl.).
+	
+
+Transimission modes(perdavimo metodai):
+	Simplex: vienpusis perdavimo srautas;
+	Half Duplex: abu (skirtingu metu) gauna/siunčia duomenis;
+	Ful Duplex: "rimčiausias rėžimas" - vienu metu siunčia ir gauna.
+	
+
+Hub - prietaisai, kure jungiasi prie maršrutizatoriaus - taip darydamas praplečia daugiau USB interneto jungčių. Priklauso 1-am OSI sluoksniui(physical).
+
+Switch: 
+	Dalina srautą, turi port'ų apsaugą - išjungia nenaudojamus portus, filtruoja MAC adresus;
+	Naudoja broadcast adresavuną
+	Priklauso 2-am OSI sluoksniui(Data-Link)
+	
+Hub vs Switch:
+	switch tsg geriau
+	
+	
+
+Access point:
+	Kartais vadinama "wireless access point"(WAP)
+	*geriausias būdas pastiprinti bangas*
+	dažniausiai laidais sujungti
+	
+Repeaters(stiprintuvas);
+	pvz: wifi stiprintuvas - stiprina wifi bangas
+
+
+Routers:
+	Routeriai turi firewall savyje
+	
+
+Firewalls:
+	Host-based - programos forma;
+	Software firewall - bvk tas pats kaip Host-based;
+	Hardware firewall (pvz maršrutizatoriuje);
+	Next-generation firewall - ne vien tik taisykles, su machine learning'u, daugiau kitų funkcionalumų
+	
+Stateless Firewall:
+	Permission (deny, allow)
+	Protocol(TCP, UDP, Any)
+	Source(IP address or IP block):
+		...
+	...
+	
+State Firewall - veikia ne pagal taisykles, o kontekstą:
+	Makes decisions basend on context, or state, or traffic.
+	Can ensure TCP traffic is part of an established TCP session - if not, traffic is blocked.
+	
+	
+WAF - Web application firewall:
+	apsaugo web aplikacijas arba web serverius
+
+Next-generation firewalls - kaip kokiam sluoksny saugo YRA FOTO
+
+Next-generation firewalls gali būti taikoma apsauga ir aplikaciniam lygyje, ir pačiam įrenginy

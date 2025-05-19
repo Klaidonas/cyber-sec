@@ -1,0 +1,40 @@
+populiariusios atakos:
+	DOS/DDOS
+	Sniffing attack
+	Poisoning Attack - attempt to corrupt the cache with different data
+	
+IPv4 - sukurtas 1980, iki dabar toliau naudojamas plačiausiai, nors ir egzistuoja IPv6
+
+
+Dažniausiai ping'inimas (arba tsg ICMP) yra uždraustas vidiniuoe tinkluose dėl saugumo priežasčių.
+
+FTP - failų perkelimas
+
+SFTP - saugus failų perkelimas
+
+SSL - duomenų perdavimas saugiu ryšiu
+
+Ipsec - saugus protokolas duomenų perdavimui
+
+saugiausias būdas perduoti duomenis: TLS
+
+SSL - Secure Sockets Layer
+TLS - Transport Layer Security
+
+Email and web usage;
+	SMTP;
+	POP3 & Secure POP(POP3)
+	IMAP4 and secure IMAP
+	HTTP;
+	HTTPS;
+	
+	
+Populiarus dalykas yra laiko sinkronizacija (Time Synchronization), jis irgi yra svarbus saugumui
+
+NTP - Network Time Protocol
+SNTP - Simple Network Time Protocol
+
+**(YRA FOTO DEFAULT PORTU**
+
+
+DNSSEC - dns papildoma apsauga

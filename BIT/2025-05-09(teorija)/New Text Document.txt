@@ -1,0 +1,36 @@
+agregatorius - mechanizmas
+
+Kerberos:
+	tipas: simetrinio rakto tinklinis autentikavimas
+	naudojimas: dažniausiai vidiniuose tinkluose(pvz Windows AD)
+	paskirtis: patikimas naudotojo autentikavimas per bilietų(ticket) sistemą
+	privalumas: vientisas prisijungimas(SSO_
+	
+Radius:
+	Tipas: Centralizuota autentikavimo protokolas
+	Naudojimas: Tinklo prieigos kontrolė, VPN, Wi-Fi
+	Paskirtis: Autentikavimas, Autorizavimas, apskaia (AAA)
+	Pivalumas: palaiko daug naudotojų autentikavimo būdų
+	
+SAML:
+	Tipas: XML pagrindu sukurta federuoto tapatybės patvirtinimo sistema
+	Naudojimas: Web SSO tarp įmonių (pvz SaaS paslaugoms)
+	Paskirtis: Naudotojo tapatybės perdavimas tarp skirtingų domenų	
+	Pivalumas: Centralizuotas ta[patybės valdymas per naršyklę.
+	
+	
+OpenID Connect:
+	Tipas: tapatybės sluoksnis ant OAuth 2.0
+	Naudojimas: Prisijungmas prie github
+	Paskirtis: daznioausia programuotojai naudoja
+	Pivalumas: 
+	
+	
+OpenID Connect:
+	Tipas: Autorizavimo protokolas
+	Naudojimas: Programėlėms ar svetainėm leidžia naudoti
+	Paskirtis: Prieigos prie API kontrolė
+	Pivalumas: Deleguota prieiga(pvz prisijunti su google)
+	
+LDAP
+	Tipas: Katalogų paslaugų protokolas

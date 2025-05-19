@@ -1,0 +1,18 @@
+reikia visą laiką atnaujint, patchint serverius su laiku.
+
+CLPC - Closed-Loop Process Control
+
+BYOD -	bring your own device
+CYOD -	choose your own device
+COPE -	coorporate-owned, personally-enabled
+COBO -	coorporate-owned, business-only
+
+Access control'ai:
+	DAC (Discretionary Access Control):
+		A system owner is responsible for managing access
+	MAC	(Mandatory Access Control): 
+		An individual has control over objects they own
+	RBAC(Role-Based Access Control):
+		A user gains access based on their role in the organization
+	ABAC(Attribute-Based Access Control):
+		A user gains access based on specific criteria
