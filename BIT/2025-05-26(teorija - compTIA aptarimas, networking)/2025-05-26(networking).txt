@@ -1,0 +1,14 @@
+WAF - website application firewall 
+
+
+Intranet - vidinins interneto tinklas.
+Internet - visam pasauly naudojamas interneto tinklas
+Extranet - vidinis interneto tinklas/rtalas, bet gali but prisijungiama prie jo ir is isores - pvz CRM sistemos
+
+Dark net/web - sunkiai pasiekiami portalai
+
+segmentavimo tipai:
+	1.logical Separation:
+		pvz: potinklius tureti;
+	2.Physical Separation.
+		

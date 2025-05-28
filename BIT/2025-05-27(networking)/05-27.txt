@@ -1,0 +1,51 @@
+routingas yra kaip maršrutizatorius
+
+routeris sujungia lokalius tinklus
+
+routing types:
+	Mannual;
+	Dynamical;
+	
+routeriai yra beveik kaip mini kompiuteriai:
+	turi cpu;
+	turi vidine OS;
+	turi ramus.
+	
+router memory:
+	RAM: is volatile;
+		running IOS
+		running configuration file;
+		ip routing and ARP tables.
+	ROM: non-volatile;
+		bootup instrutions;
+		basic diagnostic software;
+		limited IOS.
+	NVRAM: non-volatile;
+		startup configuation file.
+	Flash: non-volatile;
+		IOS;
+		Other system files
+		
+routerio komponentai:
+	1. power supplu;
+	2. shield for WIC
+	3. Fan;
+	4. SDRAM;
+	5. NVRAM;
+	6. CPU;
+	7. Advanced integration module (AIM)
+	
+
+(iš THM networking paemiau)
+*-ROUTING-*
+	keli pagrindinių routing'o protokolų pvz:
+	1. OSPF (Open Shortest Path First) - greičiausias būdas - routeriai dalinasi info tarpusavy apie jū topologiją(fizinį išdėstymą), taip 
+	kiekvienas routeris žino visą tinklo žemėlapį ir gali nustatyti greičiausią maršrutą(route'ą).
+	2. EIGRP (Enhanced Interior Gateway Routing Protocol) - leidžia dalintis routereiams info, tada jie su algoritmais 
+	paskaičiuoja efektyviausią/labiausiai apsimokantį būdą perduoti duomenis.
+	3. BGP (Border Gateway Protocol) - pagrinde naudojamas internetui(ne lokaliam tinklui), jis leidžia skirtingiems tinklams dalintis rout'ingo info 
+	ir įsteigti(establish'int) kelius duomenims keliauti. BGP gali padėti maršrutizuoti(routinti) duomenims per internetą, net per daug skirtingų tinklų.
+	4. RIP (Routing Information Protocol) - paprastas protokolas, dažniausiai naudojamas mažiems tinklams. routeriai dalinasi info apie tinklus, 
+	kuriuos gali pasiekti ir apie routerius(hops), kurių jiems reikia, kad iki ten nusigautų. Rezultate, kiekvienas routeris susidaro routing table ir 
+	renkasi kelią, kuriam reikia mažiausiai hops'ų(routerių).
+*-ROUTING-*

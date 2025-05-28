@@ -1,0 +1,1 @@
+reverse  shell su metasploitable: jau seniai ir daug sykiu dariau juos, tik su paciais windows. yra prie pentestingo tutorialas
