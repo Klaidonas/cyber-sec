@@ -1,0 +1,37 @@
+IDS (intrusion detection system)
+IPS (intrusion prevention system)
+
+DMS (Demilitarized Zone) :
+	atskiras rinklas kuris stovi tarp vidinio(privataus) ir viešo interneto. Įpratai jame laikomos viešai prieinamos paslaugos (pvz svetainės, el. paštas),
+	kad apsaugotų vidinį tinklą nuo tiesioginio išorinio priėjimo
+
+
+IDS vs IPS:
+	IPS: yra vienoj linijoje su srautu;
+	IDS: ne toje pačioje linijoje kaip srautas;
+	
+NIDS (networking intrusion detecion system)
+SNORT - atviro kodo ir GPLV2 NIDS/IPS istemos.
+
+kaip naudot Snort:
+	integruoti Snort įrankį(kaip IDS), kuris tada stebi paketus.
+	
+Aktyvi apsauga (Active defense):
+	užknisti atakuotoją;
+	įkalinti juos laiko švaistyme(pvz honeypot);
+	Duomenų kaupimas + pastebėti/priskirti priežastį/suprasti kodėl taip įvyko(attempt attribution);
+	'Atakuoti atgal';
+	Sumažinti MTTD(Mean-time-to-detect) ir MTTR (Man-time-to-respond).
+	
+Kodėl honeypot?
+	Lengva sufiguruoti, paleisti ir išlaikyti;
+	Sužinau daug naujų dalykų;
+																										`	
+	
+homey pot - sistema specialiai turinti saugumo spragų, skirta privilioti atakuotojus į ją įsilaužti.
+	
+honey pot dar naudojamas monitoringui - pasimato kokiais būdais bando laužtis atakuotojai; jų IP adresai surenkami, į ban listus įdedami...
+
+honey net - sistema sudaryta iš daug honey pot sistemų.
+
+honey file - kažkoks konkretus failas kuriuo norima privilioti atakuotoją.

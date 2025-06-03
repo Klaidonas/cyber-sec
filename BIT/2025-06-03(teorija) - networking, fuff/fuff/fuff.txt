@@ -1,0 +1,2 @@
+fuff - naudojama ieskoti subdomenu (pvz blam.com -> app.blam.com; ->support.blam.com -> ...)
+YRA FOTO

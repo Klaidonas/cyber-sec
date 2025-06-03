@@ -1,0 +1,7 @@
+IDS - intrusion detection system
+IPS - intrusion prevention system
+
+IDS modeliai:
+	Signature-based;
+	
+	Geuristic-, behavior-based

@@ -1,0 +1,31 @@
+Elements of a wireless network
+
+	IoT - internet of things. Pvz:
+		išmanieji sriubrliai, išmanieji šaldytuvai, sensoriai...
+
+	Wireless hosts :
+		Laptop, smartphone, IoT ;
+		Run applications;
+		May be stationary (non-mobile) or mobile;
+		**Wireless does not always mean mobility!**
+		
+	Ad hoc mode - bevielio tinklo setup'o būdas, kai kiekvienas įrenginys yra tiesiogiai sujungtas su kitu įrenginiu nenaudojant centralizuoto routerio ar AP(access point).
+		Kiekvienas įrenginys(node'as) gali siųsti duomenis kitam artimam įrenginiui ir kartu jie suformuoja savarankiškai organizuojamą tinklą(self-organizing network).
+	Ad hoc mode:
+		No base stations;
+		Nos can only transmit to other nodes within linkcoverage;
+		Nodes organize themselves into a network: route among themselves
+		
+		
+802.11: KANALAI (Channels, association)
+
+	2.4GHz kanalai yra atskirti ir 5Ghz kanalai atskirti
+	
+	
+Personl area networks: Bluetooth:
+	less than 10m diameter;
+	Replacement for cables(mouse, keyboard, headphones);
+	Ad hoc: no infrastructure;
+	2.4-2.5 GHz ISM radio band, up to 3 Mbps;
+	Master controller / clients devices:
+		master polls clients, grants requests for client transmissions. 
