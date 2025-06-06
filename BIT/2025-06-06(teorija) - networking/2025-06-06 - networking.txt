@@ -1,0 +1,40 @@
+wireless cryptographic protocols:
+	WPA2 and CCMP;
+	Open;
+	Pre-shared key (PSK);
+	Enterprise modes;
+	WPA3 and Simultaneous Authentication of Equals
+	
+
+simple wireless attacks:
+	Disassociaion attack:
+		removes a wireless client from a wireless network;
+	WPS:
+		Streamlines process of configuring wireless clients;
+		
+	WPS - funkcija, leidzianti greit prisijungti prie routerio.
+	turi trumpa/lengva pin koda, todel daznai taikomasi i sita su brute force.
+	
+	jammer'iai - įrenginiai(nelegalūs) su kuriais gali blokuoti, stabdyti ryšį. su jais daromos Jamming atakos
+	
+	
+	initialization vetors (IV) attack:
+		bando rastu PSK(pre-shared key);
+		...
+		
+		
+Wireless war:
+	War driving:
+		Practice of looking for a wireless network;
+	War flying:
+		Uses planes or drones instead of car;
+	War ...ing
+	
+Bluetooth attacks:
+	main attacks:
+		bluejackin;
+		bluesnarf;
+		bluedebugging;
+		...
+		
+	
