@@ -1,0 +1,39 @@
+types of Wireless Encryption
+
+WEP
+ V
+TKIP;
+RADIUS;
+LEAP;
+802.11i.
+ V
+WPA;
+WPA2;
+WPA2 Enterprise.
+ V
+AES;
+EAP.
+ V
+CCMP.
+
+
+
+Simple wireless attacks:
+
+	Rogues access points
+		unauthorized AP;
+	Evilt twins
+		Rogues AP with same ssID as legitimate AP;
+	Jamming attack
+		Broadcasts noise or other signals on same frequency
+	
+	
+Warchalking - paviešinimas tinklo(užrašymas ant sienos, ant plyteliu(zemes)), kuriam rado prieigą.
+
+Data Emanation - kai suvedinėjam kodą kažkokioj sistemjo(pvz bankomatas, klaviatūra) ir kažkas to klausosi(gaudo signalus).
+
+Bluetooth attacks:
+	1)BlueJacking - gaut failų ar kažką kenksmingo neina padaryti, bet galima su tuo paprankint ar pagąsdinti kažką;
+	2) BlueSnarfing - galima apeiti telefono saugumą ir pasiimti tm tikrus duomenis, pvz: kontaktus, kalendoriaus detales, nuotraukas
+
+NFC(Near-field communication) attacks.

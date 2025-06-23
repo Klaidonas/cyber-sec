@@ -1,0 +1,40 @@
+endpoints: serveriai, desktopai, laptopai, telefonai, IoT įrenginiai
+
+master images - įmonių specializuoti įrankis, - kai jau yra suvienodintos įmonės sistemos, su šitu įrankiu žymiai paprasčiau viską set up'int, prižiūrėti, daryti naujinimus..
+
+Project management methodologiesL
+	Agile;
+	Waterfall
+	
+Release Management
+	1. Request for changes or new features ->
+	2. Release planning and design ->
+	3. Software build ->
+	4. Review ->
+	5. Test ->
+	6. Deployment ->
+	7. Support ->
+	8. Issue reporting and collections ->
+	1. Request for changes or new features ->
+	2. Release planning and design ->
+	...
+	
+	
+Encrypting Drives:
+	Full disk encryption (FDE) - užšifruoja visą diską/drive'ą
+	
+	Self Encrypting Device (SED) - kitas šifravimo būdas (ne toks populiarus ir ne toks geras)
+
+	BitLocker - disko šifravimo programa (windowsu default'as), bet yra buvę nulaužimų praeity, valstybinės galimai gali apeit
+
+	VeraCrypt - disko šifravimo programa, kurios nei valstybinės įstaigos negali nulaužt
+
+
+Trusted Platform Module (TPM) - šifravimo chip'as - kripto precesorius/micro kontroleris
+
+Hardware Security Module (HSM) - fizinė apsauga
+
+
+DLP veikimo principas: Identify->Report->Prevent
+
+RMN - remote monitoring and management 
