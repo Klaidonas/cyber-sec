@@ -1,0 +1,25 @@
+Embedded System - sistema, turinti paskirtį būtent kažkokiam funkcionalumui. pvz: kamera. printeris, telefonas, kondicionierius..
+
+Embedded System Constraints:
+	Compute;
+	Crypto;
+	Power;
+	Range;
+	Authentication;
+	Network;
+	Cost;
+	Inability to path;
+	Implied trust;
+	Weak defaults
+	
+	
+(chatGPT)SCADA - Supervisory Control and Data Acquisition
+(chatGPT)ICSS - Industrial Control and Safety System
+
+SCADA/ICSs:
+	Manufacturing and industrial;
+	Facilities;
+	Energy;
+	Logistics;
+	Protect behind NIPS.
+	

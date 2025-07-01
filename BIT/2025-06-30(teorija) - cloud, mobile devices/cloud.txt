@@ -1,0 +1,80 @@
+MSP - managed service provider
+MSSP - managed security service provider
+
+CASB - Cloud access security broker
+
+DDOS - distributed denial of service
+EDOS - economic denial of service
+
+Cloud computing - Saas vs Perpetual model:
+	Subscription Model:
+		smaller, regular payments but costs can add up;
+		continuous access to the latest software versions;
+		Receive regular updates, always have the latest features;
+		ongoing support including in the fee.
+		
+	Perpetual License:
+		higher upfront cost, but can be cost-effective;
+		you own this version of software forever
+		typically does not include free updates
+		initial support, but ofter limited in duration
+		
+
+Security issues with mobile phone:
+	Physical Security - gali pavogti tt.
+	Voice - nors ir užšifruotas balsas, jį yra praeity nulaužę, todėl nėra pripažintas saugiu.
+	SMS - plane text'u siunčiamos žinutės - nesaugu.
+	IMEI No.: sim kortelės pakeitimas negarantuoja privatumo, tt.
+	
+
+Mobile device security:
+	lock screen,
+	...
+	
+
+Mobile Application Security:
+	Application controls;
+	Encryption;
+	Authentication;
+	Geotagging;
+	Apllication whitelisting;
+	
+	
+Mobile Threats:
+	Applicaction based threats - downloadable applicatins;
+	
+	Web baswed threats - because mobile devices are often constantly connected to the internet and used to access web-based services, web-based threats that have 
+	historically been a problem for PCs also pose issues for mobile phones;
+	
+	Network Threats - mobile devices typically support cellular networks as well as local wireless networks.
+	
+
+Mobile device connection methods:
+	cellular;
+	bluetooth;
+	NFC(near field communication);
+	WiFi;
+	Infrared;
+	USB(universal seria bus);
+	Point-to-point;
+	point-to-multipoint.
+	
+Mobile device management (MDM):
+	application management;
+	content management;
+	passwords and PINs;
+	biometrics;
+	screen locks;
+	full device encryption;
+	contrainerization-good for BYOD;
+	storage segmentation;
+	remote wipe;
+	geolocation;
+	geoflencing;
+	GPS tagging;
+	Context-aware authentication;
+	Push notifications.
+	
+	
+Security-enhanced Android (SEAndroid)
+	Uses Security-Enhanced Linux(SELinux)

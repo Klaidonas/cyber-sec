@@ -1,0 +1,122 @@
+virtualizacijos tipai:
+	Type 1 - statomas iš karto sistemoje - tai optimaliausias tipas
+	Type 2 - 
+	
+Hardening systems:
+	Disabling unnecessary services:
+		Improved security posture;
+		Reduces attack surface;
+		Refuces risks from open ports.
+	Disablilng unneeded applications;
+	Disabling unnecessary accounts;
+	Protecting management interfaces and applications.
+	
+Using Baselines:
+	Improve overall security posture.
+	Three steps:
+		1. Initial baseline configuratio -
+			Start in secure state
+		2. Continuous security monitoring -
+			Scan for and detect changes
+		3. Remedation - 
+		Isolate or quarantine modified systems
+		
+Types of baselines:
+	Performance baseline:
+		pvz kai stringa, suleteja kazkas - kad alertintu ar kažkas tokio.
+	
+	Configuration baseline:
+		prietaisų hardinimas(tas populiariausias tsg)
+	
+	Behavioral baseline:
+		pvz kai mokom dirbtini intelekta ar firewall'us.
+	
+	Network baseline:
+		su tinklais susiję
+		
+
+Patch Management:
+	Automated deployment;
+	Controlled deployment;
+	Scheduling patch managemennt;
+	Testing, deploying and verifying updates
+	
+	Test updates -> Deploy updates -> Verify updates
+	
+
+Project management types:
+	Agile;
+	Waterfall.
+
+
+Encrypting Drives:
+	Full Disk encryption (FDE):
+		pilnai užšifruoja drive'ą(diską).
+	
+	Self-encrypting drives (SEDs):
+		Automatically encrypts entire drive;
+		Users typically need to log on to access drive.
+		
+
+Boot Integrity:
+	The Basic Input/Output System (BIOS);
+	UEFI;
+	TPM;
+	HSM.
+	
+
+Duomenys - svarbus dalykas, bet eina tik po ŽMONIŲ saugumo. Žmonės - pirmas prioritetas.
+
+
+Types of DLP Systems:
+	Network;
+	Endpoint;
+	Cloud;
+	Email.
+	
+
+Cloud Service Provider Responsibilities:
+		On-Premises: 
+			viską pats valdai/kontroliuoji.
+		IaaS:
+			pats valdai/kontroliuoji:
+				app, 
+				data, 
+				runtime, 
+				middleware, 
+				O/S
+			jie kontroliuoja:
+				virtualization;
+				servers;
+				storage;
+				networking
+		
+		PaaS;
+			pats valdai/kontroliuoji:
+				app, 
+				data, 
+				
+			jie kontroliuoja:
+				runtime;
+				middleware;
+				O/S;
+				virtualization;
+				servers;
+				storage;
+				networking
+		Saas:
+			Viską valdo/kontroliuoja jie
+			
+			
+
+MSP - 	Managed service provider
+MSSP - 	Managed security service provider
+
+
+Cloud computing security:
+	Cloud access security broker (CASB):
+		Software tool or service;
+		Placed between organization's network and the cloud provider;
+	Cloud-based DLP;
+	Secure web gateway(SWG);
+	Cloud-based firewalls;

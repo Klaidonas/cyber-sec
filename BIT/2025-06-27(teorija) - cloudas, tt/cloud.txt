@@ -1,0 +1,22 @@
+evolution:
+	mainframes;
+	mini computers;
+	personal desktops;
+	client-server;
+	ip networks;
+	mobile devices;
+	cloud computing.
+
+SASS pvz: gmail, microsoft
+PAAS pvz: hostinger
+IAAS pvz: hostinger vps
+XAAS(x-anything)
+
+Cloud general security:
+	Cloud access security broker (CASB):
+		software tool or service;
+		placed between organization's network and the cloud provider;
+	Cloud-based DLP;
+	Security web gateway;
+	cloud-based firewall
+	
